@@ -1,0 +1,58 @@
+sku;nome_peca;categoria;custo_unitario;fornecedor;estoque_atual
+PC-1015;Amortecedor Dianteiro Cofap;Suspensão;274,53;Bosch Distribuidora;45
+PC-1039;BATERIA 60AH VALEO;ELETRICA;575,24;Bosch Distribuidora;15
+PC-1045;Farol Dianteiro Monroe;ELETRICA;193.92;Fras-le Friccao;38
+PC-1001;Pastilha de Freio Valeo;FREIOS;252.61;Valeo do Brasil;0
+PC-1012;Lona de Freio Monroe ;Freio;R$ 43,13;Bosch Distribuidora;61
+PC-1018;Amortecedor Traseiro Mahle ;suspensao;139.35;Bosch Distribuidora;48
+PC-1007;Fluido de Freio DOT4 Bosch;Frenagem;210.34;Bosch Distribuidora;19
+PC-1026;Correia Dentada Nakata ;motor;40,04;Valeo do Brasil;43
+PC-1003;Pastilha de Freio Varga;Freios;520,02;Cofap Autopecas;42
+PC-1016;AMORTECEDOR TRASEIRO MONROE;Suspensão;504,36;Valeo do Brasil;41
+PC-1021;Mola Helicoidal Mahle;SUSPENSAO;488.29;Bosch Distribuidora;22
+PC-1037;Bateria 60Ah Varga;Elétrica;322,55;Mahle Metal Leve;59
+PC-1040;ALTERNADOR MONROE;eletrica;182.74;Cofap Autopecas;71
+PC-1032;Bomba d'Agua Monroe ;Motor;76,99;Cofap Autopecas;12
+PC-1006;DISCO DE FREIO BOSCH;Freios;295,71;Cofap Autopecas;21
+PC-1019;Mola Helicoidal Bosch;suspensao;252.40;Fras-le Friccao;51
+PC-1047;MOTOR DE PARTIDA VARGA;Elétrica ;385,14;Fras-le Friccao;6
+PC-1017;Amortecedor Traseiro Cofap ;SUSPENSAO;352,54;Bosch Distribuidora;3
+PC-1005;DISCO DE FREIO MAHLE;Frenagem;270.33;Nakata Comercio;48
+PC-1034;Filtro de Oleo Mahle;Motor;539,03;Fras-le Friccao;61
+PC-1030;VELA DE IGNICAO FRAS-LE;Motor;102,41;Mahle Metal Leve;68
+PC-1036;Filtro de Oleo Fras-le;Motor;611,92;Cofap Autopecas;22
+PC-1042;ALTERNADOR VALEO;Elétrica ;274.97;Valeo do Brasil;27
+PC-1031;Bomba d'Agua Monroe;Motor ;218,74;Nakata Comercio;17
+PC-1033;BOMBA D'AGUA FRAS-LE;MOTOR;27.13;Mahle Metal Leve;65
+PC-1025;Correia Dentada Fras-le ;Motor;276,75;Valeo do Brasil;32
+PC-1028;VELA DE IGNICAO BOSCH;motor;53.63;Cofap Autopecas;35
+PC-1050;Filtro de Ar Fras-le;FILTROS;44,96;Valeo do Brasil;28
+PC-1053;Filtro de Combustivel Varga ;FILTROS;422.97;Cofap Autopecas;82
+PC-1004;Disco de Freio Fras-le;FREIOS;139.86;Bosch Distribuidora;85
+PC-1020;MOLA HELICOIDAL FRAS-LE;Suspensão;37.96;Fras-le Friccao;10
+PC-1023;Bieleta Varga;suspensao;313,96;Fras-le Friccao;52
+PC-1055;Filtro de Cabine Bosch;Filtro;224.81;Valeo do Brasil;50
+PC-1022;Bieleta Valeo;suspensao;220,24;Bosch Distribuidora;10
+PC-1027;CORREIA DENTADA FRAS-LE;Motor;578.78;Mahle Metal Leve;10
+PC-1029;VELA DE IGNICAO BOSCH;Motor;44,10;Nakata Comercio;28
+PC-1013;AMORTECEDOR DIANTEIRO BOSCH;suspensao;468.21;Valeo do Brasil;70
+PC-1002;PASTILHA DE FREIO MAHLE;Frenagem;123,80;Valeo do Brasil;0
+PC-1046;MOTOR DE PARTIDA COFAP;Elétrica ;175.34;Mahle Metal Leve;49
+PC-1035;Filtro de Oleo Varga;Motor;474,81;Nakata Comercio;68
+PC-1024;Bieleta Fras-le;Suspensão ;390.83;Cofap Autopecas;49
+PC-1049;FILTRO DE AR MAHLE;filtros;524,80;Nakata Comercio;85
+PC-1048;MOTOR DE PARTIDA BOSCH;Elétrica;228,65;Valeo do Brasil;11
+PC-1051;Filtro de Ar Bosch;filtros;93,07;Bosch Distribuidora;52
+PC-1043;Farol Dianteiro Monroe;Elétrica ;374.93;Valeo do Brasil;82
+PC-1038;BATERIA 60AH VARGA;ELETRICA;568.26;Bosch Distribuidora;54
+PC-1011;LONA DE FREIO BOSCH;FREIOS;R$ 550,23;Nakata Comercio;69
+PC-1009;FLUIDO DE FREIO DOT4 COFAP;Frenagem;R$ 238,33;Cofap Autopecas;71
+PC-1014;Amortecedor Dianteiro Monroe;Suspensão;161,80;Fras-le Friccao;4
+PC-1041;Alternador Valeo;Elétrica;441,20;Cofap Autopecas;29
+PC-1054;Filtro de Combustivel Valeo ;FILTROS;476,71;Valeo do Brasil;48
+PC-1052;Filtro de Combustivel Varga ;Filtro;511,22;Bosch Distribuidora;20
+PC-1008;Fluido de Freio DOT4 Bosch;FREIOS;436,54;Fras-le Friccao;36
+PC-1057;FILTRO DE CABINE FRAS-LE;Filtros;86,66;Fras-le Friccao;66
+PC-1010;LONA DE FREIO MONROE;Freio;569,43;Nakata Comercio;20
+PC-1044;Farol Dianteiro Cofap ;Elétrica ;274,75;Mahle Metal Leve;17
+PC-1056;Filtro de Cabine Bosch ;filtros;R$ 344,80;Valeo do Brasil;36

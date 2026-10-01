@@ -1,0 +1,816 @@
+id_venda;data_venda;loja;cliente;sku;quantidade;preco_unitario;desconto;status;vendedor
+V-3138;2025-01-01; Loja Sul;Eduardo Carvalho;PC-1025;1,0;532,46;5%;concluida;Ana Prado
+V-3297;02/06/2025; Loja Sul;Auto Center Rocha Ltda;PC-1052; 2 ;804.65;0%;concluida;Ana Prado
+V-3273;2025-06-27;Loja Centro;Auto Center Martins Ltda; PC-1009 ;4;479,86;5;concluida;Diego Fontes
+V-3140;21/06/2025; Loja Norte;Thiago Rocha;PC-1040;1;424,17;20%;concluida;Elaine Rocha
+V-3047;2025-04-07;LOJA CENTRO;Juliana Teixeira;PC-1026;8;81,53;5;CONCLUIDA;Elaine Rocha
+V-3210;07-06-2025; Loja Sul;Auto Center Rocha Ltda;PC-1045;-1;431.57;0%;devolvida;Elaine Rocha
+V-3391;03-02-2025;LOJA CENTRO;Auto Center Rocha Ltda;pc-1025;1;R$ 525,27;10%;CONCLUIDA;Ana Prado
+V-3094;2025-02-11;LOJA CENTRO;Oficina Ribeiro Ltda;PC-1041;2;860,25;15;concluida;Carla Menezes
+V-3069;30/04/2025; Loja Centro;Centro Automotivo Souza Ltda;PC-1037;3;R$ 505,28;;CONCLUIDA;Diego Fontes
+V-3056;09/01/2025; Loja Sul;Oficina Almeida Ltda;PC-1027;1;1030.53;15%;Concluida;Carla Menezes
+V-3102;2025-01-13; Loja Norte;Eduardo Dias;PC-1043;1,0;569,10;15;CONCLUIDA;Elaine Rocha
+V-3269;01/05/2025; Loja Sul;Centro Automotivo Dias Ltda;PC-1008;4;R$ 720,57;;CANCELADA;Ana Prado
+V-3281;10/05/2025; Loja Centro;Oficina Martins Ltda;PC-1041;3;836,48;0;CONCLUIDA;Ana Prado
+V-3002;22-02-2025;LOJA SUL;Thiago Carvalho;PC-1018;1;245,26;;CONCLUIDA;Carla Menezes
+V-3381;26/03/2025; Loja Centro;Centro Automotivo Pereira Ltda;pc-1016;2;837.17;0;Concluida;Carla Menezes
+V-3022;2025-05-04;LOJA NORTE;Mecanica Oliveira Ltda;PC-1008;3;687.41;0;Concluida;Ana Prado
+V-3252;2025-04-14; Loja Centro;Centro Automotivo Lima Ltda;PC-1042;2;520,22;0%;Cancelada;Elaine Rocha
+V-3354;05/05/2025;Loja Centro;Centro Automotivo Rocha Ltda;PC-1011;4;918.71;10;Concluida;Carla Menezes
+V-3151;2025-06-15;LOJA SUL;Auto Center Almeida Ltda;PC-1055;2,0;343,50;10;CONCLUIDA;Bruno Tavares
+V-3077;2025-05-16;LOJA CENTRO;Auto Center Almeida Ltda;pc-1028;3;113.40;20%;concluida;Bruno Tavares
+V-3138;2025-01-01;LOJA SUL;Eduardo Carvalho; PC-1043 ;1;572.95;0;Concluida;Ana Prado
+V-3050;2025-05-18;Loja Sul;Auto Center Ribeiro Ltda;PC-1034;-3;1180.73;0%;DEVOLVIDA;Diego Fontes
+V-3121;21/03/2025; Loja Centro;Eduardo Carvalho;PC-1024;6,0;647,16;5;CANCELADA;Elaine Rocha
+V-3101;15/05/2025;Loja Sul;Eduardo Santos;PC-1039;1;1063.93;;concluida;Elaine Rocha
+V-3189;27/02/2025;Loja Sul;Thiago Teixeira;PC-1010;1,0;R$ 1.111,82;10,00;concluida;Carla Menezes
+V-3065;14-04-2025; Loja Norte;Centro Automotivo Martins Ltda;PC-1013;2;812,70;0;Concluida;Ana Prado
+V-3347;21/06/2025;LOJA SUL;Mecanica Souza Ltda;PC-1049;2;R$ 1.065,30;20,00;concluida;Bruno Tavares
+V-3230;26-05-2025;LOJA NORTE;Patricia Oliveira;PC-1015;2,0;518,04;15;CONCLUIDA;Elaine Rocha
+V-3311;09-06-2025;Loja Centro;Auto Center Ribeiro Ltda; PC-1054 ;1;R$ 869,12;20;Concluida;Diego Fontes
+V-3263;2025-05-30;LOJA SUL;Auto Center Carvalho Ltda;PC-1049;1;1.030,29;15,00;concluida;Ana Prado
+V-3373;22/01/2025;LOJA SUL;Oficina Santos Ltda;PC-1026;2;81.61;0;Concluida;Carla Menezes
+V-3197;2025-02-05;LOJA CENTRO;Oficina Almeida Ltda; PC-1035 ;3;1090,18;10,00;concluida;Elaine Rocha
+V-3045;02/01/2025; Loja Sul;Camila Oliveira; PC-1051 ;4;154.68;10,00;Concluida;Elaine Rocha
+V-3103;2025-02-11;LOJA SUL;Centro Automotivo Rocha Ltda;PC-1043;1;586.16;0%;CONCLUIDA;Elaine Rocha
+V-3207;20/04/2025;LOJA NORTE;Centro Automotivo Almeida Ltda;PC-1006;6;685,94;5;CONCLUIDA;Ana Prado
+V-3296;17/03/2025; Loja Norte;Mecanica Oliveira Ltda;PC-1005;1,0;498.71;;concluida;Diego Fontes
+V-3354;05/05/2025;Loja Centro;Centro Automotivo Rocha Ltda;PC-1018;2;259.08;0%;Concluida;Carla Menezes
+V-3190;28-02-2025;LOJA CENTRO;Vinicius Martins;pc-1039;1;1061,23;20,00;CONCLUIDA;Ana Prado
+V-3133;13-04-2025;Loja Sul;Auto Center Martins Ltda;PC-1027;6;1020.27;15;Concluida;Bruno Tavares
+V-3358;2025-04-24;Loja Norte;Centro Automotivo Rocha Ltda;PC-1023;1;R$ 693,11;;CONCLUIDA;Ana Prado
+V-3393;24-02-2025; Loja Sul;Auto Center Carvalho Ltda;PC-1021;3;1025,11;;CONCLUIDA;Diego Fontes
+V-3354;05/05/2025; Loja Centro;Centro Automotivo Rocha Ltda;PC-1025;1;510,80;15%;CONCLUIDA;Carla Menezes
+V-3352;11/04/2025;LOJA CENTRO;Auto Center Ribeiro Ltda; PC-1053 ; 1 ;824.43;5%;concluida;Diego Fontes
+V-3110;11/04/2025; Loja Norte;Mecanica Martins Ltda;PC-1018;1;260.86;10,00;Concluida;Ana Prado
+V-3363;2025-06-28;Loja Norte;Oficina Pereira Ltda; PC-1040 ;2;432,93;0%;cancelada;Carla Menezes
+V-3269;2025-05-01;LOJA SUL;Centro Automotivo Dias Ltda;PC-1049;2,0;1044.65;0;CANCELADA;Ana Prado
+V-3395;21/06/2025; Loja Centro;Mecanica Souza Ltda;PC-1007;4;358.94;0;CANCELADA;Ana Prado
+V-3030;26/01/2025; Loja Sul;Camila Pereira;PC-1006;1;698.05;;concluida;Elaine Rocha
+V-3053;2025-04-02;LOJA CENTRO;Mecanica Santos Ltda;PC-1037;8,0;486,68;10,00;concluida;Bruno Tavares
+V-3005;27/02/2025;LOJA CENTRO;Camila Carvalho;PC-1006;1;665.52;0;Concluida;Carla Menezes
+V-3033;2025-01-17;Loja Norte;Centro Automotivo Almeida Ltda;PC-1026;1;77.81;10,00;concluida;Ana Prado
+V-3339;2025-04-28;LOJA CENTRO;Mecanica Santos Ltda;PC-1040;1;415,81;0%;Concluida;Bruno Tavares
+V-3016;12-02-2025;Loja Sul;Oficina Lima Ltda;PC-1034;1;1.203,00;10,00;CONCLUIDA;Carla Menezes
+V-3071;19/02/2025;Loja Norte;Oficina Pereira Ltda;PC-1028;6;110.75;5,00;concluida;Carla Menezes
+V-3065;14/04/2025;LOJA NORTE;Centro Automotivo Martins Ltda;pc-1006;2;691.28;5;concluida;Ana Prado
+V-3224;2025-04-11;Loja Centro;Eduardo Carvalho;PC-1047;2;659,10;10;concluida;Elaine Rocha
+V-3150;21-02-2025;LOJA NORTE;Aline Ribeiro;PC-1041;1;844,34;0%;CONCLUIDA;Diego Fontes
+V-3189;27-02-2025; Loja Sul;Thiago Teixeira;PC-1019;1;455.08;0;CONCLUIDA;Carla Menezes
+V-3172;09/06/2025; Loja Norte;Auto Center Pereira Ltda;PC-1056;3;R$ 571,84;15;Concluida;Elaine Rocha
+V-3222;2025-06-02;LOJA NORTE;Oficina Souza Ltda;PC-1035;1;1060.89;10%;Concluida;Elaine Rocha
+V-3129;01/04/2025; Loja Centro;Oficina Rocha Ltda;PC-1045;2,0;418.35;0%;Concluida;Diego Fontes
+V-3199;04/06/2025;Loja Sul;Camila Almeida; PC-1033 ;2;52,32;0%;concluida;Bruno Tavares
+V-3319;16/06/2025;Loja Centro;Eduardo Teixeira;PC-1042;2;555,29;5%;Concluida;Diego Fontes
+V-3063;2025-05-27; Loja Norte;Eduardo Santos;PC-1013;1;848,71;10;Concluida;Carla Menezes
+V-3071;19/02/2025;LOJA NORTE;Oficina Pereira Ltda; PC-1056 ;1;R$ 536,37;10;CONCLUIDA;Carla Menezes
+V-3095;07/04/2025;LOJA CENTRO;Eduardo Carvalho;PC-1034;3;1.146,76;0%;concluida;Elaine Rocha
+V-3066;2025-04-05;LOJA CENTRO;Patricia Oliveira;PC-1008;1;695.54;0%;CONCLUIDA;Bruno Tavares
+V-3231;29-04-2025;Loja Sul;Oficina Silva Ltda;PC-1037; 4 ;492.66;0%;Concluida;Diego Fontes
+V-3235;05/04/2025;LOJA CENTRO;Auto Center Souza Ltda;PC-1021;1;1035.70;0%;CONCLUIDA;Bruno Tavares
+V-3126;2025-04-03;Loja Sul;Camila Oliveira;PC-1049;1;1007,04;0;Cancelada;Elaine Rocha
+V-3107;22-04-2025;Loja Centro;Auto Center Carvalho Ltda;PC-1032;1;140,61;0;Concluida;Bruno Tavares
+V-3022;2025-05-04;Loja Norte;Mecanica Oliveira Ltda;PC-1026;2;78,36;0%;CONCLUIDA;Ana Prado
+V-3119;06/03/2025;LOJA SUL;Thiago Rocha;PC-1048;1;438.12;;concluida;Elaine Rocha
+V-3146;2025-02-26; Loja Centro;Thiago Rocha;PC-1054;3;R$ 895,35;0%;CONCLUIDA;Elaine Rocha
+V-3370;29/03/2025;LOJA CENTRO;Centro Automotivo Almeida Ltda;pc-1026;1;81.50;0%;concluida;Diego Fontes
+V-3323;2025-01-27; Loja Sul;Thiago Rocha;PC-1029;-1;89,45;5;devolvida;Diego Fontes
+V-3166;2025-01-09; Loja Sul;Auto Center Ribeiro Ltda;PC-1023;1;698,40;;CONCLUIDA;Diego Fontes
+V-3006;18-03-2025;Loja Centro;Fernanda Oliveira;PC-1016;2;863.71;;CONCLUIDA;Elaine Rocha
+V-3038;27/03/2025;LOJA NORTE;Mariana Teixeira;PC-1045;3;410.73;;CONCLUIDA;Bruno Tavares
+V-3243;2025-02-15;Loja Sul;Oficina Ribeiro Ltda;PC-1026;1;R$ 82,85;0%;CONCLUIDA;Ana Prado
+V-3250;07-03-2025; Loja Sul;Mecanica Carvalho Ltda;PC-1008;4;718,42;15;CONCLUIDA;Diego Fontes
+V-3248;2025-04-11;LOJA CENTRO;Centro Automotivo Pereira Ltda; PC-1016 ;2;849.05;10,00;concluida;Ana Prado
+V-3085;2025-06-26; Loja Centro;Marcos Martins;pc-1048;2;427,57;0;CONCLUIDA;Elaine Rocha
+V-3130;2025-03-16;Loja Centro;Gustavo Barbosa;pc-1009;1;482.61;0;Concluida;Elaine Rocha
+V-3082;2025-06-07;Loja Centro;Oficina Pereira Ltda;PC-1057;-1,0;157.61;5%;Devolvida;Diego Fontes
+V-3175;15-02-2025;Loja Norte;Centro Automotivo Almeida Ltda;PC-1017;6;676,85;0%;CONCLUIDA;Ana Prado
+V-3084;2025-05-04;LOJA SUL;Centro Automotivo Almeida Ltda;PC-1024; 1 ;R$ 619,48;;concluida;Elaine Rocha
+V-3229;03/05/2025; Loja Centro;Aline Teixeira;PC-1038;4;R$ 1.074,42;0%;Concluida;Elaine Rocha
+V-3315;2025-05-30; Loja Norte;Juliana Teixeira;PC-1037;1;510.35;10;Concluida;Ana Prado
+V-3219;2025-02-03;LOJA SUL;Oficina Lima Ltda;PC-1042;4;535,46;0%;Cancelada;Elaine Rocha
+V-3074;2025-03-16;LOJA CENTRO;Gustavo Silva;pc-1033;3;51,01;0%;Concluida;Carla Menezes
+V-3141;27-02-2025; Loja Centro;Centro Automotivo Pereira Ltda;pc-1047;2;R$ 646,54;0;concluida;Diego Fontes
+V-3186;27/01/2025; Loja Centro;Aline Ribeiro;PC-1023;2,0;677,15;5;Cancelada;Carla Menezes
+V-3079;2025-04-13;LOJA NORTE;Centro Automotivo Dias Ltda;PC-1009;-3;468.73;0%;Devolvida;Bruno Tavares
+V-3037;2025-01-18;Loja Norte;Centro Automotivo Rocha Ltda;PC-1032;3,0;140,64;0%;CONCLUIDA;Ana Prado
+V-3367;2025-04-10;Loja Sul;Centro Automotivo Dias Ltda;PC-1054;1;867.64;5,00;CONCLUIDA;Diego Fontes
+V-3092;2025-01-03;LOJA CENTRO;Oficina Martins Ltda;PC-1028;3;107,89;20;Concluida;Elaine Rocha
+V-3233;2025-05-01;Loja Norte;Centro Automotivo Silva Ltda;PC-1014;3;335.12;;CONCLUIDA;Diego Fontes
+V-3292;2025-04-26;LOJA NORTE;Oficina Silva Ltda;PC-1047;1;639.94;0%;Concluida;Bruno Tavares
+V-3017;21/06/2025;LOJA CENTRO;Mecanica Pereira Ltda;PC-1053;2,0;814,30;15,00;CANCELADA;Ana Prado
+V-3059;07-02-2025;LOJA NORTE;Camila Oliveira; PC-1048 ;1,0;451.68;;CONCLUIDA;Ana Prado
+V-3105;2025-06-24; Loja Sul;Oficina Almeida Ltda; PC-1011 ;4;945.55;0%;Concluida;Elaine Rocha
+V-3091;19/03/2025;LOJA SUL;Oficina Ribeiro Ltda;PC-1021;6;1015.30;5%;CONCLUIDA;Ana Prado
+V-3040;2025-05-27; Loja Centro;Auto Center Rocha Ltda;PC-1009;4;461.13;0;Concluida;Ana Prado
+V-3322;24/06/2025; Loja Norte;Aline Ribeiro;PC-1034;3;1190.59;;CONCLUIDA;Carla Menezes
+V-3205;2025-03-08; Loja Centro;Auto Center Carvalho Ltda;PC-1014;1;326,37;15%;CONCLUIDA;Carla Menezes
+V-3371;2025-04-28;LOJA SUL;Rodrigo Rocha;PC-1027;2;1079,13;0;Concluida;Ana Prado
+V-3066;05-04-2025;Loja Centro;Patricia Oliveira;PC-1029;3;86.47;20;Concluida;Bruno Tavares
+V-3378;18/05/2025; Loja Sul;Centro Automotivo Lima Ltda;PC-1030;2;230.44;0%;Concluida;Diego Fontes
+V-3105;24/06/2025;LOJA SUL;Oficina Almeida Ltda;pc-1057;1;157,85;10;Concluida;Elaine Rocha
+V-3344;03/05/2025;LOJA NORTE;Oficina Carvalho Ltda;PC-1009;-1,0;478,95;15%;DEVOLVIDA;Diego Fontes
+V-3278;23-04-2025;Loja Centro;Auto Center Martins Ltda;PC-1008;4;687.35;0%;cancelada;Carla Menezes
+V-3396;2025-05-27; Loja Centro;Auto Center Pereira Ltda;pc-1013;4;794,96;0;Concluida;Carla Menezes
+V-3117;13/04/2025; Loja Centro;Oficina Silva Ltda;PC-1004;1;326,55;0;CANCELADA;Ana Prado
+V-3267;2025-03-29;Loja Centro;Oficina Almeida Ltda;PC-1035;8;1081.48;0;Concluida;Elaine Rocha
+V-3222;02/06/2025; Loja Norte;Oficina Souza Ltda;PC-1037;1;488.56;0%;CONCLUIDA;Elaine Rocha
+V-3119;2025-03-06;LOJA SUL;Thiago Rocha;PC-1018;4,0;251.00;0;concluida;Elaine Rocha
+V-3304;11/06/2025;Loja Centro;Mecanica Oliveira Ltda;PC-1009;6;475.27;5;cancelada;Elaine Rocha
+V-3122;29/05/2025; Loja Sul;Oficina Pereira Ltda;PC-1013;1;829,66;;Concluida;Carla Menezes
+V-3250;2025-03-07; Loja Sul;Mecanica Carvalho Ltda;PC-1018;1;256,22;10,00;Concluida;Diego Fontes
+V-3332;07/04/2025;LOJA NORTE;Rodrigo Almeida;PC-1046;6;261.88;0;Concluida;Bruno Tavares
+V-3156;2025-01-07;Loja Norte;Auto Center Ribeiro Ltda; PC-1051 ;3;R$ 154,13;;CONCLUIDA;Carla Menezes
+V-3275;15/04/2025;Loja Centro;Centro Automotivo Teixeira Ltda;PC-1051;1;151,44;5,00;concluida;Elaine Rocha
+V-3039;14-04-2025;Loja Centro;Mecanica Oliveira Ltda;PC-1003;3;1.107,89;5,00;concluida;Elaine Rocha
+V-3101;2025-05-15;Loja Sul;Eduardo Santos;PC-1038; 6 ;1.091,15;5;concluida;Elaine Rocha
+V-3228;17/01/2025;Loja Norte;Oficina Lima Ltda;PC-1052;8;834,23;5%;Concluida;Bruno Tavares
+V-3235;2025-04-05;Loja Centro;Auto Center Souza Ltda;PC-1054;4,0;899,07;0%;CONCLUIDA;Bruno Tavares
+V-3179;2025-02-02;LOJA CENTRO;Fernanda Pereira;PC-1050;2;69.27;;concluida;Ana Prado
+V-3346;2025-02-21; Loja Sul;Auto Center Carvalho Ltda;PC-1054;1;886,96;5,00;CONCLUIDA;Elaine Rocha
+V-3374;10-03-2025;Loja Sul;Oficina Souza Ltda; PC-1023 ; 4 ;695,82;10%;concluida;Diego Fontes
+V-3206;2025-03-16; Loja Centro;Oficina Lima Ltda;PC-1047;4;638,06;0%;CONCLUIDA;Ana Prado
+V-3331;02/02/2025; Loja Sul;Centro Automotivo Almeida Ltda;PC-1005;1;509.90;0;concluida;Bruno Tavares
+V-3367;2025-04-10; Loja Sul;Centro Automotivo Dias Ltda;pc-1046;2;263,32;10,00;concluida;Diego Fontes
+V-3303;03/06/2025; Loja Centro;Lucas Barbosa;PC-1015;1,0;507,06;;CONCLUIDA;Diego Fontes
+V-3053;2025-04-02;Loja Centro;Mecanica Santos Ltda;PC-1015;2,0;503.27;0;Concluida;Bruno Tavares
+V-3174;2025-05-06; Loja Centro;Oficina Ribeiro Ltda;PC-1012;2;93,47;10,00;CONCLUIDA;Diego Fontes
+V-3336;25-01-2025;Loja Sul;Auto Center Teixeira Ltda;PC-1005;2,0;487.90;0;CONCLUIDA;Elaine Rocha
+V-3018;2025-02-12; Loja Norte;Auto Center Barbosa Ltda;pc-1014;1,0;346.82;;Concluida;Ana Prado
+V-3349;21/05/2025;LOJA SUL;Centro Automotivo Silva Ltda;PC-1053;3;824.78;0%;concluida;Carla Menezes
+V-3274;06-06-2025; Loja Sul;Oficina Souza Ltda;PC-1045;2;429.02;;concluida;Ana Prado
+V-3032;2025-04-22;Loja Centro;Marcos Martins; PC-1018 ;6;260.22;;CONCLUIDA;Ana Prado
+V-3277;07/01/2025; Loja Sul;Auto Center Carvalho Ltda;PC-1055;1;350,73;5;concluida;Bruno Tavares
+V-3110;2025-04-11; Loja Norte;Mecanica Martins Ltda;PC-1028;3;113,30;5,00;CONCLUIDA;Ana Prado
+V-3340;2025-02-26;Loja Sul;Rafael Souza;PC-1016;2;833,24;15,00;CONCLUIDA;Carla Menezes
+V-3251;12/02/2025;Loja Centro;Oficina Rocha Ltda;PC-1029;1;R$ 85,10;0;CONCLUIDA;Bruno Tavares
+V-3318;06/06/2025; Loja Norte;Oficina Souza Ltda;PC-1057;1;152,71;;CONCLUIDA;Carla Menezes
+V-3171;26-04-2025; Loja Centro;Aline Teixeira;PC-1008;3;678,01;;CONCLUIDA;Ana Prado
+V-3018;2025-02-12;Loja Norte;Auto Center Barbosa Ltda;PC-1026;1;82.30;15%;concluida;Ana Prado
+V-3021;29-03-2025;LOJA SUL;Oficina Pereira Ltda;pc-1048;4;442,00;10,00;CONCLUIDA;Ana Prado
+V-3175;15/02/2025;LOJA NORTE;Centro Automotivo Almeida Ltda;PC-1043;1;549.23;0;concluida;Ana Prado
+V-3325;22-01-2025;Loja Centro;Mecanica Oliveira Ltda;PC-1004;4;327,60;0;CONCLUIDA;Ana Prado
+V-3115;08/01/2025;LOJA CENTRO;Larissa Almeida;PC-1053; 1 ;828,89;;Concluida;Ana Prado
+V-3288;2025-06-02;Loja Centro;Mecanica Martins Ltda;PC-1034;1;1148,08;0;concluida;Carla Menezes
+V-3259;25/02/2025; Loja Centro;Eduardo Santos;PC-1033;2;51.36;10%;Concluida;Bruno Tavares
+V-3016;2025-02-12; Loja Sul;Oficina Lima Ltda; PC-1045 ;3,0;419,56;;Concluida;Carla Menezes
+V-3091;19-03-2025;Loja Sul;Oficina Ribeiro Ltda;pc-1040;2;432,73;10%;concluida;Ana Prado
+V-3003;26/01/2025;Loja Centro;Juliana Martins;PC-1016;3,0;R$ 825,51;20;Concluida;Elaine Rocha
+V-3074;2025-03-16;LOJA CENTRO;Gustavo Silva;PC-1004; 1 ;323.54;10,00;CONCLUIDA;Carla Menezes
+V-3136;27-05-2025;Loja Norte;Oficina Almeida Ltda;pc-1024;1;642.24;0;Concluida;Diego Fontes
+V-3209;2025-03-06; Loja Sul;Centro Automotivo Teixeira Ltda;PC-1007;-8;362.10;;Devolvida;Carla Menezes
+V-3394;2025-03-24;Loja Centro;Mecanica Martins Ltda; PC-1040 ;2;429,93;0%;concluida;Bruno Tavares
+V-3299;23-02-2025; Loja Centro;Auto Center Almeida Ltda;pc-1042;1;545.73;0;CONCLUIDA;Diego Fontes
+V-3069;2025-04-30;Loja Centro;Centro Automotivo Souza Ltda;PC-1050;1;67,84;5%;concluida;Diego Fontes
+V-3163;15-05-2025;LOJA NORTE;Oficina Carvalho Ltda;PC-1045; 1 ;405.04;15%;concluida;Carla Menezes
+V-3157;2025-03-30;LOJA SUL;Larissa Oliveira;PC-1011;3,0;927.66;0;concluida;Carla Menezes
+V-3043;07-06-2025;LOJA NORTE;Eduardo Carvalho;pc-1011;6;R$ 972,08;15;Cancelada;Bruno Tavares
+V-3132;01/04/2025;Loja Norte;Oficina Ribeiro Ltda;PC-1016;3;817.31;;CONCLUIDA;Ana Prado
+V-3052;2025-05-03; Loja Centro;Fernanda Pereira;PC-1038;-2;1.114,98;0%;Devolvida;Ana Prado
+V-3135;26/06/2025;Loja Norte;Centro Automotivo Teixeira Ltda; PC-1038 ;1;1.111,42;;CONCLUIDA;Diego Fontes
+V-3215;17/04/2025;Loja Centro;Juliana Teixeira;pc-1046;2;251.91;0%;Concluida;Ana Prado
+V-3011;2025-02-22;Loja Norte;Gustavo Silva;PC-1024; 4 ;618.93;;CONCLUIDA;Diego Fontes
+V-3114;10/05/2025;Loja Sul;Mariana Teixeira;PC-1007;8;359,98;15;CONCLUIDA;Bruno Tavares
+V-3273;27/06/2025; Loja Centro;Auto Center Martins Ltda;PC-1019;2;R$ 476,33;10;Concluida;Diego Fontes
+V-3366;2025-03-31;LOJA CENTRO;Centro Automotivo Dias Ltda;PC-1019;-1;458.40;15%;devolvida;Elaine Rocha
+V-3218;2025-02-18;LOJA CENTRO;Oficina Almeida Ltda; PC-1013 ;2;844,59;0;CONCLUIDA;Elaine Rocha
+V-3129;01-04-2025; Loja Centro;Oficina Rocha Ltda;pc-1008;2,0;703,70;0%;concluida;Diego Fontes
+V-3053;02/04/2025;LOJA CENTRO;Mecanica Santos Ltda;PC-1010;1;R$ 1.082,56;10%;Concluida;Bruno Tavares
+V-3368;2025-02-06;LOJA NORTE;Thiago Pereira;PC-1046; -3 ;263.84;;Devolvida;Elaine Rocha
+V-3282;20/03/2025;LOJA SUL;Oficina Almeida Ltda;PC-1055;1,0;350.84;10%;CONCLUIDA;Elaine Rocha
+V-3109;15/01/2025;LOJA CENTRO;Oficina Carvalho Ltda;pc-1007;2;381,72;10;Concluida;Bruno Tavares
+V-3019;2025-06-09; Loja Norte;Auto Center Pereira Ltda;PC-1045;-1;414,98;20%;DEVOLVIDA;Carla Menezes
+V-3012;2025-01-15;LOJA CENTRO;Auto Center Martins Ltda;PC-1041;2,0;860,27;;Concluida;Bruno Tavares
+V-3333;2025-04-25;Loja Centro;Rafael Souza;PC-1015;2;500,47;;CONCLUIDA;Carla Menezes
+V-3203;2025-01-05;LOJA NORTE;Oficina Almeida Ltda;pc-1032;2;135,34;0;Concluida;Bruno Tavares
+V-3092;03/01/2025;Loja Centro;Oficina Martins Ltda;PC-1037;1;493.86;0;Concluida;Elaine Rocha
+V-3334;26-05-2025; Loja Norte;Oficina Almeida Ltda;PC-1007;1;371,38;0;concluida;Ana Prado
+V-3307;2025-04-04; Loja Norte;Auto Center Almeida Ltda;PC-1045;1;R$ 417,39;0;concluida;Ana Prado
+V-3276;2025-02-04;Loja Norte;Larissa Oliveira;PC-1056;3;562,22;0%;concluida;Diego Fontes
+V-3371;2025-04-28;Loja Sul;Rodrigo Rocha;PC-1013;3;810,36;0;Concluida;Ana Prado
+V-3124;21-03-2025;LOJA SUL;Aline Pereira;PC-1038;1;1075,19;15,00;Concluida;Ana Prado
+V-3289;2025-03-29;LOJA SUL;Mecanica Souza Ltda;pc-1032;6;133,39;5%;CONCLUIDA;Carla Menezes
+V-3254;14-04-2025; Loja Norte;Auto Center Teixeira Ltda;pc-1027;4;1062,62;0%;cancelada;Diego Fontes
+V-3082;07/06/2025;LOJA CENTRO;Oficina Pereira Ltda;PC-1052;-1;792,93;;DEVOLVIDA;Diego Fontes
+V-3220;2025-02-07; Loja Norte;Mecanica Barbosa Ltda;PC-1029;1;89,28;5%;CONCLUIDA;Carla Menezes
+V-3161;16/05/2025; Loja Centro;Oficina Martins Ltda;PC-1038;2,0;1084.58;;CONCLUIDA;Carla Menezes
+V-3202;19/06/2025; Loja Norte;Oficina Rocha Ltda;PC-1030;2,0;220.76;5%;CONCLUIDA;Elaine Rocha
+V-3019;2025-06-09;Loja Norte;Auto Center Pereira Ltda;PC-1025;-6;533.44;5%;DEVOLVIDA;Carla Menezes
+V-3388;2025-01-20;LOJA NORTE;Centro Automotivo Martins Ltda;pc-1021;1;1014,58;0;CONCLUIDA;Ana Prado
+V-3113;2025-03-31;LOJA NORTE;Oficina Ribeiro Ltda;PC-1012;8;97,12;5,00;Concluida;Ana Prado
+V-3216;2025-06-07; Loja Norte;Auto Center Souza Ltda;PC-1004;1;311,91;;concluida;Elaine Rocha
+V-3178;19-01-2025;Loja Norte;Mecanica Barbosa Ltda;PC-1040;6;425.46;0%;concluida;Carla Menezes
+V-3124;21-03-2025;LOJA SUL;Aline Pereira;PC-1038;1;1075,19;15,00;Concluida;Ana Prado
+V-3364;19/04/2025; Loja Centro;Thiago Teixeira;PC-1005;2;518,08;20;concluida;Elaine Rocha
+V-3292;26-04-2025;Loja Norte;Oficina Silva Ltda;PC-1010; 2 ;1067,12;0;concluida;Bruno Tavares
+V-3081;2025-03-29;Loja Sul;Larissa Oliveira;PC-1024;1;632.18;5%;concluida;Diego Fontes
+V-3035;07-01-2025;LOJA SUL;Oficina Almeida Ltda;pc-1046;6;262.34;10;Concluida;Carla Menezes
+V-3274;2025-06-06;LOJA SUL;Oficina Souza Ltda; PC-1040 ;1,0;412.47;0%;Concluida;Ana Prado
+V-3208;2025-02-21;Loja Sul;Centro Automotivo Dias Ltda;PC-1046;4;252.36;0;concluida;Elaine Rocha
+V-3047;2025-04-07;LOJA CENTRO;Juliana Teixeira;PC-1007; 3 ;377,56;;CONCLUIDA;Elaine Rocha
+V-3172;2025-06-09; Loja Norte;Auto Center Pereira Ltda;PC-1015;4;514,44;20,00;CONCLUIDA;Elaine Rocha
+V-3331;2025-02-02; Loja Sul;Centro Automotivo Almeida Ltda;PC-1012;2;94.34;0;Concluida;Bruno Tavares
+V-3010;11-06-2025; Loja Sul;Mecanica Oliveira Ltda;PC-1051;1;147,20;0%;CONCLUIDA;Carla Menezes
+V-3277;2025-01-07; Loja Sul;Auto Center Carvalho Ltda; PC-1017 ;2;678,39;5;concluida;Bruno Tavares
+V-3322;24/06/2025;LOJA NORTE;Aline Ribeiro; PC-1039 ;1;1.057,62;15;concluida;Carla Menezes
+V-3306;30-03-2025;Loja Norte;Oficina Martins Ltda;PC-1007;1;R$ 371,00;5%;Concluida;Bruno Tavares
+V-3056;2025-01-09;Loja Sul;Oficina Almeida Ltda;PC-1047;2;647,81;0;concluida;Carla Menezes
+V-3244;04/02/2025;LOJA NORTE;Centro Automotivo Pereira Ltda;PC-1005;1;488,18;10;Cancelada;Carla Menezes
+V-3230;26/05/2025; Loja Norte;Patricia Oliveira;pc-1038;2;1134,13;5%;CONCLUIDA;Elaine Rocha
+V-3217;21/05/2025; Loja Norte;Auto Center Rocha Ltda;PC-1024; 1 ;620.11;10;concluida;Bruno Tavares
+V-3074;2025-03-16;LOJA CENTRO;Gustavo Silva;PC-1056;2;543,01;0%;CONCLUIDA;Carla Menezes
+V-3226;2025-04-07;Loja Norte;Auto Center Rocha Ltda;PC-1016;2;816,90;5;CONCLUIDA;Carla Menezes
+V-3015;11/06/2025;Loja Norte;Oficina Santos Ltda;pc-1048;2,0;R$ 432,65;15,00;Concluida;Elaine Rocha
+V-3122;2025-05-29;Loja Sul;Oficina Pereira Ltda;pc-1021; 6 ;997,89;5,00;concluida;Carla Menezes
+V-3369;09/06/2025; Loja Norte;Oficina Souza Ltda; PC-1047 ;1;635.59;0;Concluida;Ana Prado
+V-3333;25-04-2025; Loja Centro;Rafael Souza; PC-1005 ;3;490.80;10%;concluida;Carla Menezes
+V-3192;19/05/2025; Loja Centro;Oficina Lima Ltda;PC-1051;4,0;154,62;;concluida;Ana Prado
+V-3049;28/05/2025;LOJA CENTRO;Auto Center Barbosa Ltda;PC-1012;-1;96.94;5;Devolvida;Carla Menezes
+V-3328;2025-04-15; Loja Norte;Auto Center Teixeira Ltda;PC-1034;2;1193,37;15%;Concluida;Carla Menezes
+V-3142;2025-01-18;Loja Sul;Auto Center Rocha Ltda;PC-1013;4,0;818.77;0;concluida;Diego Fontes
+V-3285;18/05/2025;LOJA CENTRO;Auto Center Almeida Ltda;pc-1032; 1 ;142,40;;Cancelada;Elaine Rocha
+V-3022;2025-05-04;LOJA NORTE;Mecanica Oliveira Ltda;PC-1050; 2 ;R$ 68,41;10,00;Concluida;Ana Prado
+V-3014;2025-02-18;LOJA CENTRO;Mecanica Dias Ltda; PC-1012 ;1;R$ 94,24;;Concluida;Carla Menezes
+V-3120;2025-02-02;LOJA NORTE;Mecanica Barbosa Ltda;PC-1005;1;488.60;10;Concluida;Elaine Rocha
+V-3246;01-04-2025; Loja Sul;Mariana Teixeira;PC-1021; 2 ;1.003,15;;Concluida;Carla Menezes
+V-3367;10/04/2025;Loja Sul;Centro Automotivo Dias Ltda;PC-1008;8;684.63;0%;Concluida;Diego Fontes
+V-3138;01-01-2025; Loja Sul;Eduardo Carvalho;pc-1053;1;805,68;5;CONCLUIDA;Ana Prado
+V-3398;2025-05-10;LOJA NORTE;Oficina Pereira Ltda;PC-1033;1;51,21;5;CONCLUIDA;Ana Prado
+V-3166;2025-01-09;Loja Sul;Auto Center Ribeiro Ltda;PC-1034; 2 ;1.198,34;10%;Concluida;Diego Fontes
+V-3090;2025-05-27;Loja Centro;Oficina Santos Ltda;PC-1034;1;1195.63;15;CONCLUIDA;Carla Menezes
+V-3207;20/04/2025; Loja Norte;Centro Automotivo Almeida Ltda;PC-1030;6;225,39;0%;Concluida;Ana Prado
+V-3207;20/04/2025;Loja Norte;Centro Automotivo Almeida Ltda;PC-1024;3;R$ 652,36;10;CONCLUIDA;Ana Prado
+V-3240;06/05/2025;LOJA CENTRO;Fernanda Pereira;PC-1003;2;1078.69;20%;CONCLUIDA;Elaine Rocha
+V-3025;09/01/2025;Loja Centro;Thiago Pereira;PC-1007;1;366,02;0%;Concluida;Ana Prado
+V-3019;09-06-2025; Loja Norte;Auto Center Pereira Ltda;PC-1004;-1;323,86;0%;devolvida;Carla Menezes
+V-3081;29/03/2025;Loja Sul;Larissa Oliveira;PC-1004;4;318,49;5%;Concluida;Diego Fontes
+V-3137;06/06/2025;Loja Norte;Thiago Rocha;PC-1027;-2;1019,01;;devolvida;Carla Menezes
+V-3313;21-03-2025; Loja Sul;Oficina Souza Ltda;PC-1043;2;555,82;0%;CONCLUIDA;Elaine Rocha
+V-3191;10-05-2025;Loja Norte;Oficina Almeida Ltda;PC-1016;4;864,60;0%;concluida;Bruno Tavares
+V-3127;04/01/2025;Loja Centro;Auto Center Almeida Ltda;pc-1026;2;78,72;10,00;Concluida;Ana Prado
+V-3026;23/03/2025;LOJA SUL;Thiago Carvalho;PC-1057;1;R$ 158,36;;Concluida;Bruno Tavares
+V-3233;01/05/2025; Loja Norte;Centro Automotivo Silva Ltda;PC-1051;6;147,06;;Concluida;Diego Fontes
+V-3139;2025-04-17;LOJA SUL;Oficina Ribeiro Ltda;PC-1055;3;350.58;20;Concluida;Ana Prado
+V-3237;25/03/2025;Loja Norte;Mariana Teixeira;pc-1047;1;631.94;0%;concluida;Bruno Tavares
+V-3053;2025-04-02;LOJA CENTRO;Mecanica Santos Ltda; PC-1048 ;8;429.14;5,00;concluida;Bruno Tavares
+V-3083;2025-06-14; Loja Centro;Centro Automotivo Silva Ltda; PC-1007 ;4;363.32;0;CONCLUIDA;Ana Prado
+V-3337;2025-01-26;Loja Centro;Juliana Santos;PC-1053;-1;831.22;10,00;DEVOLVIDA;Elaine Rocha
+V-3369;09/06/2025;LOJA NORTE;Oficina Souza Ltda;pc-1005;3;513.10;10;Concluida;Ana Prado
+V-3245;31/01/2025; Loja Norte;Eduardo Teixeira;PC-1049;1;1072.70;5%;concluida;Ana Prado
+V-3017;21/06/2025;Loja Centro;Mecanica Pereira Ltda;pc-1056;4;558,64;5,00;cancelada;Ana Prado
+V-3056;2025-01-09; Loja Sul;Oficina Almeida Ltda;PC-1006;3;674.61;0;concluida;Carla Menezes
+V-3125;24/02/2025; Loja Sul;Oficina Santos Ltda;pc-1004; 1 ;R$ 316,64;;concluida;Elaine Rocha
+V-3199;2025-06-04;LOJA SUL;Camila Almeida;PC-1034;2;1218.00;5;concluida;Bruno Tavares
+V-3346;21/02/2025;Loja Sul;Auto Center Carvalho Ltda;PC-1016;2,0;855,72;0%;CONCLUIDA;Elaine Rocha
+V-3047;07-04-2025;Loja Centro;Juliana Teixeira;PC-1041;3;854,56;0%;concluida;Elaine Rocha
+V-3308;2025-06-02; Loja Centro;Aline Ribeiro;PC-1005;3;513.76;5;Concluida;Bruno Tavares
+V-3319;2025-06-16;Loja Centro;Eduardo Teixeira;PC-1017;1,0;665,20;10;concluida;Diego Fontes
+V-3050;2025-05-18; Loja Sul;Auto Center Ribeiro Ltda;pc-1055; -8 ;336.83;0%;Devolvida;Diego Fontes
+V-3248;2025-04-11; Loja Centro;Centro Automotivo Pereira Ltda;PC-1051;2;151,76;0%;concluida;Ana Prado
+V-3057;30/01/2025;Loja Norte;Mecanica Carvalho Ltda;PC-1041;2;867,18;5%;concluida;Bruno Tavares
+V-3137;06-06-2025;Loja Norte;Thiago Rocha;PC-1009;-2,0;484.16;0;devolvida;Carla Menezes
+V-3108;2025-01-04;LOJA NORTE;Rodrigo Rocha;PC-1051;4,0;153,42;10%;Concluida;Diego Fontes
+V-3064;2025-04-16;LOJA CENTRO;Larissa Almeida;PC-1055;1;334,68;0;Concluida;Elaine Rocha
+V-3294;2025-04-25;LOJA SUL;Centro Automotivo Dias Ltda;PC-1040; 4 ;432.62;10;CONCLUIDA;Ana Prado
+V-3232;2025-01-03;LOJA NORTE;Centro Automotivo Martins Ltda;PC-1045;1;424,99;0%;concluida;Ana Prado
+V-3143;2025-02-04; Loja Norte;Auto Center Carvalho Ltda;PC-1035; 1 ;1.042,71;10,00;CONCLUIDA;Elaine Rocha
+V-3238;2025-02-15;LOJA CENTRO;Auto Center Carvalho Ltda;PC-1048;2;441.54;10;Cancelada;Elaine Rocha
+V-3208;21/02/2025;LOJA SUL;Centro Automotivo Dias Ltda;PC-1054;1;878,25;;Concluida;Elaine Rocha
+V-3350;20/02/2025;Loja Norte;Centro Automotivo Souza Ltda;PC-1040;1;415.48;0;concluida;Carla Menezes
+V-3380;19/06/2025; Loja Sul;Mariana Teixeira;PC-1025;1;541,16;5;Concluida;Bruno Tavares
+V-3375;30-06-2025; Loja Norte;Mecanica Martins Ltda;PC-1015;8;514.99;0;Cancelada;Bruno Tavares
+V-3195;22/01/2025; Loja Norte;Oficina Santos Ltda;PC-1034;3;1166,27;0;CONCLUIDA;Elaine Rocha
+V-3012;15/01/2025; Loja Centro;Auto Center Martins Ltda;PC-1028;3;107,65;0%;Concluida;Bruno Tavares
+V-3345;04-03-2025;Loja Centro;Camila Pereira;PC-1004;3;311,96;0%;concluida;Elaine Rocha
+V-3214;24/01/2025;LOJA SUL;Thiago Teixeira;PC-1039;2;1070,18;10%;CONCLUIDA;Diego Fontes
+V-3361;10/02/2025;Loja Centro;Thiago Pereira;PC-1025;1,0;523,48;0%;concluida;Bruno Tavares
+V-3311;2025-06-09; Loja Centro;Auto Center Ribeiro Ltda;pc-1057;4,0;160,20;10%;concluida;Diego Fontes
+V-3278;2025-04-23; Loja Centro;Auto Center Martins Ltda;pc-1024;4;620.03;20%;CANCELADA;Carla Menezes
+V-3352;2025-04-11;LOJA CENTRO;Auto Center Ribeiro Ltda;PC-1029;3;R$ 90,50;10;Concluida;Diego Fontes
+V-3143;2025-02-04; Loja Norte;Auto Center Carvalho Ltda;PC-1008;1;699,08;15%;CONCLUIDA;Elaine Rocha
+V-3365;28-06-2025; Loja Norte;Oficina Pereira Ltda;PC-1017;1;696,96;0;Concluida;Bruno Tavares
+V-3001;2025-06-04;Loja Norte;Larissa Oliveira;PC-1006;3;699,77;;Concluida;Ana Prado
+V-3235;05/04/2025; Loja Centro;Auto Center Souza Ltda;PC-1013;1;821.60;;CONCLUIDA;Bruno Tavares
+V-3338;28/03/2025; Loja Sul;Patricia Oliveira;PC-1047;2;663.31;0%;concluida;Ana Prado
+V-3295;2025-03-28;Loja Centro;Aline Teixeira;PC-1003;1;1.069,68;;Concluida;Carla Menezes
+V-3071;19-02-2025;LOJA NORTE;Oficina Pereira Ltda;PC-1004;2;325.40;0;CONCLUIDA;Carla Menezes
+V-3045;02/01/2025; Loja Sul;Camila Oliveira;PC-1005;1;494,23;5%;Concluida;Elaine Rocha
+V-3344;2025-05-03;Loja Norte;Oficina Carvalho Ltda;PC-1055;-2;335,26;;DEVOLVIDA;Diego Fontes
+V-3036;05-01-2025; Loja Sul;Oficina Ribeiro Ltda;PC-1056;6;558.29;0%;CONCLUIDA;Ana Prado
+V-3305;19/03/2025;LOJA CENTRO;Thiago Rocha;PC-1057;3;R$ 152,61;;Concluida;Ana Prado
+V-3005;2025-02-27;Loja Centro;Camila Carvalho;PC-1045;2;R$ 422,74;5;CONCLUIDA;Carla Menezes
+V-3141;2025-02-27;Loja Centro;Centro Automotivo Pereira Ltda;PC-1043; 2 ;585.84;0%;Concluida;Diego Fontes
+V-3024;04/01/2025; Loja Sul;Mecanica Pereira Ltda;PC-1005; 6 ;R$ 510,97;0;Cancelada;Carla Menezes
+V-3159;2025-03-13; Loja Sul;Eduardo Carvalho; PC-1018 ;3;252.45;0;concluida;Elaine Rocha
+V-3366;31/03/2025;LOJA CENTRO;Centro Automotivo Dias Ltda;PC-1033;-1,0;49.20;10%;devolvida;Elaine Rocha
+V-3270;09/02/2025;LOJA NORTE;Fernanda Oliveira;PC-1055; 1 ;344,61;20%;CONCLUIDA;Carla Menezes
+V-3364;19/04/2025;Loja Centro;Thiago Teixeira;PC-1017;1,0;676.70;0%;Concluida;Elaine Rocha
+V-3142;2025-01-18;Loja Sul;Auto Center Rocha Ltda;PC-1057;2;154.66;;concluida;Diego Fontes
+V-3264;2025-04-17;Loja Centro;Auto Center Carvalho Ltda;PC-1043;1,0;562,69;5%;CONCLUIDA;Ana Prado
+V-3319;2025-06-16; Loja Centro;Eduardo Teixeira;PC-1006;1;R$ 692,15;;Concluida;Diego Fontes
+V-3327;16/01/2025;Loja Centro;Marcos Martins;PC-1018;3;259,30;5,00;concluida;Elaine Rocha
+V-3185;14/03/2025; Loja Sul;Camila Carvalho;PC-1012;1;98,69;5,00;concluida;Elaine Rocha
+V-3295;28/03/2025;LOJA CENTRO;Aline Teixeira;pc-1056;1;R$ 558,21;0%;concluida;Carla Menezes
+V-3239;2025-03-13; Loja Norte;Larissa Oliveira;PC-1039;2;1.016,83;5%;cancelada;Bruno Tavares
+V-3260;21-01-2025;Loja Norte;Auto Center Carvalho Ltda;PC-1015;1;497,75;15;concluida;Carla Menezes
+V-3122;2025-05-29;Loja Sul;Oficina Pereira Ltda;PC-1006;2;692,27;15%;concluida;Carla Menezes
+V-3330;12/01/2025; Loja Centro;Eduardo Carvalho;PC-1040;-2;415.14;;devolvida;Elaine Rocha
+V-3101;2025-05-15; Loja Sul;Eduardo Santos;PC-1047;3;654,73;10,00;concluida;Elaine Rocha
+V-3386;2025-06-29; Loja Sul;Auto Center Pereira Ltda;PC-1057;4;151,37;15,00;concluida;Elaine Rocha
+V-3248;2025-04-11; Loja Centro;Centro Automotivo Pereira Ltda;PC-1013;1;836.74;15%;concluida;Ana Prado
+V-3221;09/05/2025; Loja Sul;Oficina Souza Ltda;PC-1019;6;469.53;0%;Concluida;Carla Menezes
+V-3068;16/04/2025;Loja Sul;Oficina Almeida Ltda;PC-1038;3,0;1.121,86;20;CONCLUIDA;Elaine Rocha
+V-3092;2025-01-03;Loja Centro;Oficina Martins Ltda; PC-1041 ;1;855,38;;concluida;Elaine Rocha
+V-3287;24-03-2025;LOJA CENTRO;Aline Pereira;pc-1023; 2 ;R$ 689,05;10;CONCLUIDA;Bruno Tavares
+V-3238;2025-02-15;LOJA CENTRO;Auto Center Carvalho Ltda;PC-1039;2,0;1064,15;20;Cancelada;Elaine Rocha
+V-3222;2025-06-02;Loja Norte;Oficina Souza Ltda;PC-1003;1;1101,84;20,00;CONCLUIDA;Elaine Rocha
+V-3156;2025-01-07;Loja Norte;Auto Center Ribeiro Ltda;PC-1053;1;784.42;5,00;concluida;Carla Menezes
+V-3241;04-02-2025;LOJA SUL;Oficina Santos Ltda;PC-1037;1;500.61;0;Concluida;Bruno Tavares
+V-3376;2025-04-12; Loja Norte;Centro Automotivo Rocha Ltda;PC-1035;1;1.088,06;;CONCLUIDA;Bruno Tavares
+V-3234;2025-04-26;Loja Sul;Oficina Almeida Ltda;PC-1024;1;622,82;0;Concluida;Ana Prado
+V-3314;28/02/2025;Loja Sul;Auto Center Ribeiro Ltda;PC-1019;3;460,04;10;cancelada;Elaine Rocha
+V-3011;22/02/2025;Loja Norte;Gustavo Silva; PC-1013 ;3;848,21;0%;Concluida;Diego Fontes
+V-3320;2025-01-15;LOJA SUL;Auto Center Barbosa Ltda;pc-1003;1;1083.62;;CONCLUIDA;Ana Prado
+V-3149;23-04-2025; Loja Sul;Oficina Rocha Ltda; PC-1029 ;1;86.07;5;CANCELADA;Bruno Tavares
+V-3260;2025-01-21; Loja Norte;Auto Center Carvalho Ltda;PC-1037;2;501,58;0;concluida;Carla Menezes
+V-3130;16-03-2025;Loja Centro;Gustavo Barbosa;PC-1034;1,0;1.145,98;10%;concluida;Elaine Rocha
+V-3209;2025-03-06;LOJA SUL;Centro Automotivo Teixeira Ltda; PC-1046 ;-1;263.16;0%;Devolvida;Carla Menezes
+V-3281;2025-05-10;Loja Centro;Oficina Martins Ltda;pc-1010;1;1.094,71;0%;Concluida;Ana Prado
+V-3393;24-02-2025;LOJA SUL;Auto Center Carvalho Ltda;PC-1050;1;69.60;;concluida;Diego Fontes
+V-3233;01-05-2025; Loja Norte;Centro Automotivo Silva Ltda;PC-1005;1;502.05;10%;CONCLUIDA;Diego Fontes
+V-3075;09-03-2025;LOJA NORTE;Eduardo Santos;PC-1016;3;870,52;0;Concluida;Diego Fontes
+V-3055;2025-03-21; Loja Centro;Beatriz Dias;PC-1009;1;463.08;5,00;concluida;Carla Menezes
+V-3158;19/02/2025;Loja Sul;Oficina Silva Ltda;PC-1032;1;138.84;5%;CONCLUIDA;Ana Prado
+V-3017;21/06/2025; Loja Centro;Mecanica Pereira Ltda;PC-1019;2;472.31;10,00;cancelada;Ana Prado
+V-3252;2025-04-14; Loja Centro;Centro Automotivo Lima Ltda;PC-1029;2;85.26;10;Cancelada;Elaine Rocha
+V-3265;2025-03-26;LOJA SUL;Thiago Rocha;PC-1015;6;507.18;;cancelada;Carla Menezes
+V-3265;2025-03-26; Loja Sul;Thiago Rocha;PC-1053;6;784.97;0%;CANCELADA;Carla Menezes
+V-3360;2025-01-18;Loja Centro;Oficina Oliveira Ltda;PC-1024;4;646.78;15,00;CONCLUIDA;Bruno Tavares
+V-3236;2025-06-27; Loja Norte;Thiago Pereira; PC-1038 ;1,0;R$ 1.101,25;0;concluida;Bruno Tavares
+V-3009;2025-03-01;LOJA NORTE;Oficina Souza Ltda;PC-1026;2;79,39;0;Cancelada;Elaine Rocha
+V-3028;03/03/2025;Loja Centro;Auto Center Souza Ltda;PC-1047;2;631,52;20%;concluida;Elaine Rocha
+V-3235;05-04-2025;LOJA CENTRO;Auto Center Souza Ltda;PC-1016;1;839.98;0;Concluida;Bruno Tavares
+V-3032;22/04/2025;Loja Centro;Marcos Martins;PC-1030;3;221,58;10,00;concluida;Ana Prado
+V-3218;18/02/2025;LOJA CENTRO;Oficina Almeida Ltda;PC-1052;2;806,80;5%;Concluida;Elaine Rocha
+V-3381;2025-03-26; Loja Centro;Centro Automotivo Pereira Ltda;PC-1030;4;220.95;0%;CONCLUIDA;Carla Menezes
+V-3237;2025-03-25;LOJA NORTE;Mariana Teixeira;PC-1054; 1 ;908.98;10;concluida;Bruno Tavares
+V-3047;07/04/2025;LOJA CENTRO;Juliana Teixeira;PC-1013;1;834,06;;concluida;Elaine Rocha
+V-3162;2025-04-04;Loja Centro;Oficina Pereira Ltda;PC-1011;1;931.74;15%;concluida;Diego Fontes
+V-3276;04-02-2025;LOJA NORTE;Larissa Oliveira;PC-1015;1;R$ 530,80;5%;Concluida;Diego Fontes
+V-3007;20/02/2025; Loja Sul;Oficina Oliveira Ltda;PC-1057;1;151.01;0;CONCLUIDA;Ana Prado
+V-3322;2025-06-24;Loja Norte;Aline Ribeiro;PC-1005;3;497.98;5;CONCLUIDA;Carla Menezes
+V-3359;2025-03-12; Loja Sul;Oficina Santos Ltda; PC-1013 ;2;842.25;0%;concluida;Elaine Rocha
+V-3325;22/01/2025;LOJA CENTRO;Mecanica Oliveira Ltda; PC-1025 ;4;524.09;5,00;concluida;Ana Prado
+V-3088;18/03/2025;LOJA CENTRO;Centro Automotivo Lima Ltda;pc-1021;1;1007.48;;Concluida;Elaine Rocha
+V-3211;2025-06-30; Loja Sul;Camila Pereira;PC-1043;1;R$ 561,70;;CONCLUIDA;Elaine Rocha
+V-3125;2025-02-24;Loja Sul;Oficina Santos Ltda;PC-1049; 6 ;1.029,09;0%;Concluida;Elaine Rocha
+V-3344;03-05-2025; Loja Norte;Oficina Carvalho Ltda;PC-1015;-4;517.71;0;devolvida;Diego Fontes
+V-3353;25/04/2025;LOJA SUL;Mecanica Barbosa Ltda;PC-1034;2;R$ 1.204,84;20%;CONCLUIDA;Carla Menezes
+V-3205;2025-03-08;LOJA CENTRO;Auto Center Carvalho Ltda;PC-1042;1;548.31;;concluida;Carla Menezes
+V-3365;28/06/2025;Loja Norte;Oficina Pereira Ltda;PC-1024;2;625,29;0%;Concluida;Bruno Tavares
+V-3392;10/05/2025; Loja Sul;Aline Ribeiro;PC-1016;1;848,98;0;Concluida;Diego Fontes
+V-3141;27/02/2025; Loja Centro;Centro Automotivo Pereira Ltda;PC-1021;2;1011.52;0%;Concluida;Diego Fontes
+V-3119;06-03-2025; Loja Sul;Thiago Rocha;PC-1006;3;671,85;;CONCLUIDA;Elaine Rocha
+V-3023;26-05-2025;Loja Centro;Oficina Souza Ltda;PC-1046;1;251,86;10,00;Concluida;Carla Menezes
+V-3174;06-05-2025;LOJA CENTRO;Oficina Ribeiro Ltda;PC-1046;2;263.76;5%;CONCLUIDA;Diego Fontes
+V-3180;26/06/2025;Loja Centro;Mecanica Souza Ltda;PC-1023;2;682.23;;Concluida;Bruno Tavares
+V-3378;2025-05-18;Loja Sul;Centro Automotivo Lima Ltda;PC-1048;1,0;438,89;5,00;concluida;Diego Fontes
+V-3148;2025-02-13;Loja Centro;Auto Center Teixeira Ltda;PC-1050;2;69,50;0;CONCLUIDA;Ana Prado
+V-3360;18/01/2025; Loja Centro;Oficina Oliveira Ltda;PC-1049;3;1.039,31;0%;Concluida;Bruno Tavares
+V-3222;02/06/2025;Loja Norte;Oficina Souza Ltda;PC-1003;1;1101.84;20;CONCLUIDA;Elaine Rocha
+V-3083;2025-06-14; Loja Centro;Centro Automotivo Silva Ltda;PC-1009;8;465,31;5%;concluida;Ana Prado
+V-3290;2025-03-24;LOJA SUL;Centro Automotivo Souza Ltda;PC-1015; 4 ;531,29;0;CONCLUIDA;Carla Menezes
+V-3199;04-06-2025; Loja Sul;Camila Almeida;PC-1049;4;R$ 1.026,13;5;concluida;Bruno Tavares
+V-3280;2025-05-20; Loja Centro;Auto Center Teixeira Ltda;PC-1025;4;528.78;;CONCLUIDA;Carla Menezes
+V-3151;15/06/2025; Loja Sul;Auto Center Almeida Ltda;PC-1043; 8 ;584,56;10%;concluida;Bruno Tavares
+V-3031;2025-03-29;LOJA SUL;Oficina Souza Ltda;PC-1045;6;406.31;5;Concluida;Carla Menezes
+V-3400;29/05/2025; Loja Centro;Oficina Almeida Ltda;PC-1049;1;1067.62;0%;CANCELADA;Elaine Rocha
+V-3013;2025-06-15; Loja Norte;Mariana Teixeira;PC-1038;2;1.099,26;15%;concluida;Bruno Tavares
+V-3080;29/06/2025; Loja Norte;Mecanica Santos Ltda;PC-1046;6;256.44;10%;Concluida;Ana Prado
+V-3057;2025-01-30;LOJA NORTE;Mecanica Carvalho Ltda;PC-1023;4;712,02;20;Concluida;Bruno Tavares
+V-3336;25/01/2025;Loja Sul;Auto Center Teixeira Ltda;PC-1028;2,0;113,78;0%;CONCLUIDA;Elaine Rocha
+V-3121;21/03/2025; Loja Centro;Eduardo Carvalho;PC-1037;3;508,45;0%;Cancelada;Elaine Rocha
+V-3243;2025-02-15;LOJA SUL;Oficina Ribeiro Ltda;pc-1005;2;510.75;15%;concluida;Ana Prado
+V-3198;15/06/2025;Loja Sul;Oficina Ribeiro Ltda;PC-1024;1;650,39;;CONCLUIDA;Bruno Tavares
+V-3251;12/02/2025; Loja Centro;Oficina Rocha Ltda;PC-1040;1;424,87;5,00;CONCLUIDA;Bruno Tavares
+V-3274;06/06/2025; Loja Sul;Oficina Souza Ltda;PC-1050; 1 ;R$ 68,41;0%;CONCLUIDA;Ana Prado
+V-3026;23/03/2025;LOJA SUL;Thiago Carvalho;pc-1005;1;502.49;0;concluida;Bruno Tavares
+V-3374;2025-03-10;Loja Sul;Oficina Souza Ltda;PC-1043;2;577,32;0%;Concluida;Diego Fontes
+V-3257;13-06-2025;Loja Centro;Mecanica Martins Ltda;PC-1019;1;458.99;;CONCLUIDA;Carla Menezes
+V-3225;2025-03-06; Loja Norte;Centro Automotivo Rocha Ltda;pc-1035;8;1.070,72;0%;CONCLUIDA;Diego Fontes
+V-3228;17/01/2025; Loja Norte;Oficina Lima Ltda; PC-1013 ;1;823,65;10%;Concluida;Bruno Tavares
+V-3298;25/05/2025;Loja Centro;Auto Center Martins Ltda;pc-1004; 6 ;313,36;0%;Concluida;Elaine Rocha
+V-3008;2025-01-21; Loja Centro;Eduardo Santos;PC-1007;4;370,54;;concluida;Bruno Tavares
+V-3255;28-04-2025;Loja Centro;Gustavo Silva;PC-1054;-1,0;867,48;;DEVOLVIDA;Elaine Rocha
+V-3091;19/03/2025;LOJA SUL;Oficina Ribeiro Ltda;PC-1028;4,0;R$ 111,62;20%;CONCLUIDA;Ana Prado
+V-3147;2025-01-27;LOJA NORTE;Eduardo Carvalho; PC-1011 ;1;925.40;10,00;concluida;Bruno Tavares
+V-3080;29/06/2025; Loja Norte;Mecanica Santos Ltda;PC-1029; 3 ;89,45;15;CONCLUIDA;Ana Prado
+V-3049;28/05/2025;Loja Centro;Auto Center Barbosa Ltda;PC-1008;-6;693.11;0;Devolvida;Carla Menezes
+V-3268;27-02-2025;LOJA NORTE;Auto Center Santos Ltda;PC-1010; 2 ;1056,59;;concluida;Diego Fontes
+V-3372;2025-01-16; Loja Centro;Oficina Silva Ltda;PC-1048;2;452,33;;concluida;Carla Menezes
+V-3160;2025-06-27;Loja Centro;Oficina Ribeiro Ltda;PC-1027; 3 ;1.035,46;;concluida;Bruno Tavares
+V-3380;2025-06-19; Loja Sul;Mariana Teixeira;PC-1038;8;1124.56;0%;Concluida;Bruno Tavares
+V-3370;29-03-2025;LOJA CENTRO;Centro Automotivo Almeida Ltda; PC-1011 ;1;970.02;0;Concluida;Diego Fontes
+V-3087;12-05-2025;Loja Sul;Oficina Santos Ltda;PC-1024; 1 ;634,77;0;CONCLUIDA;Carla Menezes
+V-3284;26-05-2025;Loja Norte;Oficina Souza Ltda;PC-1025;1;511,25;20%;CANCELADA;Ana Prado
+V-3321;2025-06-06; Loja Norte;Oficina Martins Ltda;pc-1028;3;108,72;0;Concluida;Bruno Tavares
+V-3025;2025-01-09;Loja Centro;Thiago Pereira;PC-1037;2;502,33;10,00;concluida;Ana Prado
+V-3106;2025-05-24; Loja Centro;Oficina Silva Ltda;pc-1040;1;440.95;15%;CONCLUIDA;Elaine Rocha
+V-3153;2025-04-06; Loja Sul;Oficina Rocha Ltda;PC-1049;4;1052.68;0;Concluida;Ana Prado
+V-3318;2025-06-06;Loja Norte;Oficina Souza Ltda;PC-1012;2;92,47;5;concluida;Carla Menezes
+V-3135;2025-06-26; Loja Norte;Centro Automotivo Teixeira Ltda;PC-1004;1,0;309.93;;concluida;Diego Fontes
+V-3355;2025-03-04; Loja Centro;Auto Center Ribeiro Ltda;PC-1009;1;465.35;5;CONCLUIDA;Elaine Rocha
+V-3335;10/05/2025;LOJA NORTE;Rodrigo Rocha;PC-1034;3;1185.32;10%;Concluida;Bruno Tavares
+V-3054;04-02-2025; Loja Centro;Auto Center Carvalho Ltda;PC-1051;2;149.61;5;concluida;Ana Prado
+V-3129;01/04/2025;LOJA CENTRO;Oficina Rocha Ltda;PC-1009;1;477,99;15%;Concluida;Diego Fontes
+V-3381;2025-03-26; Loja Centro;Centro Automotivo Pereira Ltda;PC-1030;4;220.95;0%;CONCLUIDA;Carla Menezes
+V-3273;2025-06-27;LOJA CENTRO;Auto Center Martins Ltda;PC-1053;1,0;816.44;0%;concluida;Diego Fontes
+V-3018;12/02/2025;Loja Norte;Auto Center Barbosa Ltda;PC-1041;1,0;817,76;0;concluida;Ana Prado
+V-3285;2025-05-18; Loja Centro;Auto Center Almeida Ltda;PC-1042;2;522,45;5,00;cancelada;Elaine Rocha
+V-3280;2025-05-20;Loja Centro;Auto Center Teixeira Ltda;PC-1004;1;327,47;10,00;CONCLUIDA;Carla Menezes
+V-3247;2025-02-24; Loja Centro;Camila Almeida;PC-1025;6;534,09;0%;concluida;Diego Fontes
+V-3112;2025-03-28;Loja Norte;Auto Center Souza Ltda;PC-1054;1;904.30;0%;concluida;Bruno Tavares
+V-3231;29/04/2025; Loja Sul;Oficina Silva Ltda;PC-1041;1;847.18;0;Concluida;Diego Fontes
+V-3002;2025-02-22;LOJA SUL;Thiago Carvalho;PC-1050;1,0;68,00;5;concluida;Carla Menezes
+V-3383;2025-04-30;Loja Sul;Aline Ribeiro;pc-1016;1;863,58;5,00;Concluida;Carla Menezes
+V-3331;2025-02-02; Loja Sul;Centro Automotivo Almeida Ltda; PC-1054 ;2;890.78;10%;concluida;Bruno Tavares
+V-3103;2025-02-11;LOJA SUL;Centro Automotivo Rocha Ltda;PC-1043;1;586.16;0%;CONCLUIDA;Elaine Rocha
+V-3388;2025-01-20;LOJA NORTE;Centro Automotivo Martins Ltda;PC-1034;1;1178.14;15;Concluida;Ana Prado
+V-3006;18/03/2025; Loja Centro;Fernanda Oliveira;PC-1023;2;674.97;0%;concluida;Elaine Rocha
+V-3056;09-01-2025; Loja Sul;Oficina Almeida Ltda; PC-1046 ;1;259,59;0%;Concluida;Carla Menezes
+V-3221;09-05-2025;Loja Sul;Oficina Souza Ltda;pc-1040;2;438,21;0;concluida;Carla Menezes
+V-3015;11/06/2025;Loja Norte;Oficina Santos Ltda;PC-1019;6;R$ 468,26;0%;concluida;Elaine Rocha
+V-3258;21/06/2025;LOJA CENTRO;Mecanica Barbosa Ltda;PC-1029;2;88.93;;concluida;Elaine Rocha
+V-3086;02-06-2025;Loja Centro;Oficina Souza Ltda;PC-1030;1;218,63;5,00;CONCLUIDA;Ana Prado
+V-3382;18/02/2025;Loja Sul;Patricia Oliveira;PC-1023; 1 ;680,38;5,00;Concluida;Ana Prado
+V-3328;15/04/2025; Loja Norte;Auto Center Teixeira Ltda;PC-1053;2;812,35;0%;CONCLUIDA;Carla Menezes
+V-3104;2025-01-18; Loja Norte;Oficina Rocha Ltda;PC-1051;2,0;150,48;0%;concluida;Diego Fontes
+V-3301;16/06/2025;LOJA SUL;Camila Pereira;PC-1050;2;65.94;10,00;CONCLUIDA;Elaine Rocha
+V-3048;26/05/2025; Loja Sul;Oficina Ribeiro Ltda;PC-1047;8;631,58;15%;concluida;Ana Prado
+V-3026;2025-03-23;LOJA SUL;Thiago Carvalho;pc-1051;2;151.91;;CONCLUIDA;Bruno Tavares
+V-3084;2025-05-04;LOJA SUL;Centro Automotivo Almeida Ltda;PC-1005;4;503.45;5,00;Concluida;Elaine Rocha
+V-3147;2025-01-27;Loja Norte;Eduardo Carvalho;PC-1003;1;1125.24;;concluida;Bruno Tavares
+V-3204;22/05/2025;LOJA SUL;Oficina Almeida Ltda;PC-1042;2,0;547,28;0;CONCLUIDA;Carla Menezes
+V-3160;27/06/2025;LOJA CENTRO;Oficina Ribeiro Ltda;pc-1013;4;R$ 803,01;10;Concluida;Bruno Tavares
+V-3308;02-06-2025;Loja Centro;Aline Ribeiro;PC-1008;6;711.64;;CONCLUIDA;Bruno Tavares
+V-3271;2025-06-03;LOJA SUL;Centro Automotivo Dias Ltda;PC-1023;1;681.24;5,00;concluida;Bruno Tavares
+V-3318;2025-06-06;LOJA NORTE;Oficina Souza Ltda;PC-1011;1;917,42;0%;concluida;Carla Menezes
+V-3283;2025-03-21;Loja Sul;Oficina Martins Ltda;PC-1028;1;111.82;0%;CONCLUIDA;Bruno Tavares
+V-3295;2025-03-28; Loja Centro;Aline Teixeira;PC-1028;3;108,59;20%;Concluida;Carla Menezes
+V-3176;03/06/2025;LOJA CENTRO;Auto Center Martins Ltda;PC-1049;1;1057.77;10,00;concluida;Diego Fontes
+V-3145;12-03-2025; Loja Norte;Auto Center Barbosa Ltda;PC-1012;3,0;93.62;10%;CONCLUIDA;Bruno Tavares
+V-3112;2025-03-28; Loja Norte;Auto Center Souza Ltda; PC-1026 ;4;78,57;0%;Concluida;Bruno Tavares
+V-3138;01-01-2025;LOJA SUL;Eduardo Carvalho;PC-1049;1;1031.68;0;concluida;Ana Prado
+V-3019;2025-06-09;Loja Norte;Auto Center Pereira Ltda;PC-1012;-1;96.95;;DEVOLVIDA;Carla Menezes
+V-3273;2025-06-27;LOJA CENTRO;Auto Center Martins Ltda;PC-1005;2,0;R$ 498,82;0%;Concluida;Diego Fontes
+V-3333;25-04-2025;Loja Centro;Rafael Souza;PC-1010;2;1.089,14;0;Concluida;Carla Menezes
+V-3276;04-02-2025;LOJA NORTE;Larissa Oliveira;PC-1045;6;406,48;;Concluida;Diego Fontes
+V-3020;08/02/2025;LOJA NORTE;Oficina Almeida Ltda;PC-1049;3;1.053,95;;Concluida;Diego Fontes
+V-3134;2025-05-03;LOJA CENTRO;Mecanica Martins Ltda;pc-1043;6,0;556,90;10;concluida;Elaine Rocha
+V-3076;2025-05-26;Loja Centro;Juliana Martins;PC-1032;3;139.37;;concluida;Bruno Tavares
+V-3180;26/06/2025;LOJA CENTRO;Mecanica Souza Ltda;pc-1033;6;51.51;0%;CONCLUIDA;Bruno Tavares
+V-3223;27-03-2025;Loja Norte;Eduardo Teixeira;PC-1017;6,0;R$ 690,68;0;concluida;Bruno Tavares
+V-3097;2025-02-02;Loja Norte;Centro Automotivo Martins Ltda;PC-1045; 4 ;415.96;;CONCLUIDA;Bruno Tavares
+V-3398;10/05/2025;LOJA NORTE;Oficina Pereira Ltda;PC-1048;2;423.23;5%;Concluida;Ana Prado
+V-3024;04-01-2025;LOJA SUL;Mecanica Pereira Ltda;PC-1057;1;150.46;0;CANCELADA;Carla Menezes
+V-3335;10/05/2025;LOJA NORTE;Rodrigo Rocha;PC-1015; 1 ;521,39;5,00;Concluida;Bruno Tavares
+V-3169;2025-01-28;LOJA NORTE;Oficina Santos Ltda;PC-1030;1;230,22;10%;CONCLUIDA;Carla Menezes
+V-3121;2025-03-21;LOJA CENTRO;Eduardo Carvalho; PC-1040 ;1;438.37;5%;Cancelada;Elaine Rocha
+V-3227;2025-06-27;LOJA NORTE;Centro Automotivo Lima Ltda;PC-1005;1;R$ 506,70;10%;Concluida;Ana Prado
+V-3081;29-03-2025; Loja Sul;Larissa Oliveira;PC-1052;1,0;R$ 823,55;0%;concluida;Diego Fontes
+V-3008;2025-01-21;Loja Centro;Eduardo Santos;PC-1011;1;931,75;10%;CONCLUIDA;Bruno Tavares
+V-3329;21/01/2025;LOJA NORTE;Auto Center Silva Ltda;PC-1030;3;218,48;5;concluida;Elaine Rocha
+V-3148;13/02/2025;LOJA CENTRO;Auto Center Teixeira Ltda;PC-1025;1,0;R$ 506,40;5,00;Concluida;Ana Prado
+V-3003;2025-01-26;LOJA CENTRO;Juliana Martins;PC-1043; 3 ;557,25;5;Concluida;Elaine Rocha
+V-3249;2025-05-04;Loja Centro;Aline Ribeiro;PC-1029;4;85,99;5;concluida;Carla Menezes
+V-3127;04-01-2025; Loja Centro;Auto Center Almeida Ltda;PC-1056; 1 ;549,53;5;Concluida;Ana Prado
+V-3388;2025-01-20;LOJA NORTE;Centro Automotivo Martins Ltda;PC-1027;2;1074.65;0%;Concluida;Ana Prado
+V-3291;2025-05-23;LOJA CENTRO;Mecanica Santos Ltda;PC-1037;1,0;505,72;20%;CONCLUIDA;Carla Menezes
+V-3264;2025-04-17; Loja Centro;Auto Center Carvalho Ltda;PC-1051; 2 ;R$ 149,88;;CONCLUIDA;Ana Prado
+V-3030;2025-01-26;Loja Sul;Camila Pereira;PC-1051;2,0;150.44;;Concluida;Elaine Rocha
+V-3208;2025-02-21;Loja Sul;Centro Automotivo Dias Ltda;PC-1033;6;50,07;;CONCLUIDA;Elaine Rocha
+V-3189;2025-02-27;LOJA SUL;Thiago Teixeira;PC-1009;1,0;469,43;5%;Concluida;Carla Menezes
+V-3100;2025-03-31;LOJA NORTE;Centro Automotivo Pereira Ltda;PC-1027;1;1.066,70;20%;CONCLUIDA;Elaine Rocha
+V-3268;2025-02-27;LOJA NORTE;Auto Center Santos Ltda;pc-1013;2;810.53;;Concluida;Diego Fontes
+V-3212;27/05/2025;LOJA NORTE;Oficina Ribeiro Ltda;PC-1023;1;720,86;0%;Concluida;Carla Menezes
+V-3209;06/03/2025;Loja Sul;Centro Automotivo Teixeira Ltda;PC-1051;-1;151,85;;DEVOLVIDA;Carla Menezes
+V-3331;2025-02-02;Loja Sul;Centro Automotivo Almeida Ltda; PC-1007 ;3,0;379,74;5,00;CONCLUIDA;Bruno Tavares
+V-3139;17-04-2025; Loja Sul;Oficina Ribeiro Ltda;PC-1054;6;909,25;5%;CONCLUIDA;Ana Prado
+V-3068;16-04-2025;LOJA SUL;Oficina Almeida Ltda;PC-1053;4;R$ 811,86;;CONCLUIDA;Elaine Rocha
+V-3336;2025-01-25;Loja Sul;Auto Center Teixeira Ltda;PC-1004;6;327,04;5%;Concluida;Elaine Rocha
+V-3164;14/04/2025;Loja Norte;Beatriz Dias;PC-1046; 2 ;261,25;;Concluida;Elaine Rocha
+V-3309;2025-02-17;LOJA SUL;Juliana Santos;PC-1039;1;1080,58;;Concluida;Diego Fontes
+V-3051;13/01/2025; Loja Sul;Oficina Rocha Ltda;pc-1051;4,0;151.80;0%;concluida;Carla Menezes
+V-3207;2025-04-20;Loja Norte;Centro Automotivo Almeida Ltda;PC-1024;3;652,36;10%;Concluida;Ana Prado
+V-3052;03/05/2025;Loja Centro;Fernanda Pereira;PC-1030;-2;218.76;15,00;Devolvida;Ana Prado
+V-3114;10-05-2025;LOJA SUL;Mariana Teixeira; PC-1049 ;2;1005,53;15%;CONCLUIDA;Bruno Tavares
+V-3173;11/05/2025;LOJA NORTE;Camila Carvalho;PC-1029; 1 ;86,72;0%;Concluida;Bruno Tavares
+V-3107;2025-04-22; Loja Centro;Auto Center Carvalho Ltda; PC-1028 ;4;112,98;;concluida;Bruno Tavares
+V-3057;2025-01-30;LOJA NORTE;Mecanica Carvalho Ltda;PC-1033;2;51,81;0;Concluida;Bruno Tavares
+V-3022;2025-05-04;Loja Norte;Mecanica Oliveira Ltda;PC-1030;6;220,95;20;CONCLUIDA;Ana Prado
+V-3075;09/03/2025; Loja Norte;Eduardo Santos;PC-1033;2;51,95;0;concluida;Diego Fontes
+V-3323;2025-01-27;LOJA SUL;Thiago Rocha;PC-1010;-3;1089,37;0;Devolvida;Diego Fontes
+V-3396;27/05/2025; Loja Centro;Auto Center Pereira Ltda;PC-1051;2;155,68;5,00;CONCLUIDA;Carla Menezes
+V-3348;2025-05-28;Loja Norte;Centro Automotivo Rocha Ltda;PC-1012;-1;97,40;10,00;DEVOLVIDA;Ana Prado
+V-3343;2025-03-16; Loja Norte;Oficina Almeida Ltda;PC-1010;1;1046.38;0;CONCLUIDA;Bruno Tavares
+V-3399;2025-06-23;LOJA CENTRO;Thiago Pereira;PC-1025; 2 ;540.05;10%;CONCLUIDA;Carla Menezes
+V-3015;11/06/2025;Loja Norte;Oficina Santos Ltda;PC-1006;1;R$ 685,78;;concluida;Elaine Rocha
+V-3105;24/06/2025;LOJA SUL;Oficina Almeida Ltda;PC-1052;1;R$ 817,85;5;concluida;Elaine Rocha
+V-3317;2025-01-20;Loja Norte;Centro Automotivo Pereira Ltda;PC-1021;3;1.003,79;10,00;Concluida;Elaine Rocha
+V-3033;2025-01-17;Loja Norte;Centro Automotivo Almeida Ltda; PC-1009 ;2,0;486,96;0;CONCLUIDA;Ana Prado
+V-3200;13/01/2025; Loja Centro;Auto Center Carvalho Ltda;PC-1032;1;135,06;20;concluida;Diego Fontes
+V-3329;21/01/2025; Loja Norte;Auto Center Silva Ltda;PC-1011;1;928.21;0;concluida;Elaine Rocha
+V-3251;12/02/2025;Loja Centro;Oficina Rocha Ltda;PC-1029;1;R$ 85,10;0;CONCLUIDA;Bruno Tavares
+V-3078;2025-04-30; Loja Centro;Auto Center Silva Ltda; PC-1019 ;4;474,03;0;cancelada;Elaine Rocha
+V-3117;13-04-2025;LOJA CENTRO;Oficina Silva Ltda;PC-1038;1;R$ 1.082,19;5;CANCELADA;Ana Prado
+V-3151;15-06-2025;LOJA SUL;Auto Center Almeida Ltda;PC-1043;8;584,56;10%;concluida;Bruno Tavares
+V-3377;2025-03-18; Loja Norte;Thiago Carvalho;PC-1057; 1 ;156,19;15%;concluida;Elaine Rocha
+V-3291;23/05/2025;Loja Centro;Mecanica Santos Ltda;PC-1046;2;265,22;0%;Concluida;Carla Menezes
+V-3287;24/03/2025;Loja Centro;Aline Pereira;PC-1005;1;509,47;5;concluida;Bruno Tavares
+V-3144;01/04/2025;LOJA SUL;Mariana Teixeira;PC-1024;1;624,09;0;Concluida;Diego Fontes
+V-3186;2025-01-27;LOJA CENTRO;Aline Ribeiro;PC-1032;1;138.69;10%;cancelada;Carla Menezes
+V-3003;2025-01-26;LOJA CENTRO;Juliana Martins;PC-1019;2;452.55;15,00;concluida;Elaine Rocha
+V-3267;2025-03-29;Loja Centro;Oficina Almeida Ltda;PC-1035;8;1081.48;0;Concluida;Elaine Rocha
+V-3111;07/01/2025; Loja Norte;Centro Automotivo Souza Ltda;PC-1023;1;712.76;;CONCLUIDA;Bruno Tavares
+V-3274;06/06/2025;Loja Sul;Oficina Souza Ltda; PC-1027 ;6;1049.00;10,00;CONCLUIDA;Ana Prado
+V-3396;27/05/2025;LOJA CENTRO;Auto Center Pereira Ltda;PC-1052; 3 ;822.71;5,00;Concluida;Carla Menezes
+V-3163;15/05/2025;LOJA NORTE;Oficina Carvalho Ltda;PC-1049; 1 ;1.015,25;15%;CONCLUIDA;Carla Menezes
+V-3268;2025-02-27; Loja Norte;Auto Center Santos Ltda;PC-1046;1,0;265,50;0;Concluida;Diego Fontes
+V-3082;2025-06-07;LOJA CENTRO;Oficina Pereira Ltda;PC-1032;-1;135,02;0%;devolvida;Diego Fontes
+V-3077;2025-05-16;Loja Centro;Auto Center Almeida Ltda; PC-1030 ;6,0;221,79;0%;CONCLUIDA;Bruno Tavares
+V-3374;2025-03-10;Loja Sul;Oficina Souza Ltda; PC-1055 ;3;339,81;0;CONCLUIDA;Diego Fontes
+V-3116;12/05/2025;Loja Centro;Oficina Santos Ltda;PC-1052;-1;839,95;10%;devolvida;Ana Prado
+V-3035;2025-01-07;Loja Sul;Oficina Almeida Ltda;PC-1018;1;260,58;0;CONCLUIDA;Carla Menezes
+V-3387;23-05-2025;Loja Centro;Auto Center Almeida Ltda;PC-1015;6;502,31;0;concluida;Carla Menezes
+V-3284;26/05/2025; Loja Norte;Oficina Souza Ltda;PC-1003;2;1076,45;0;Cancelada;Ana Prado
+V-3139;2025-04-17; Loja Sul;Oficina Ribeiro Ltda;PC-1041;2;859,63;0;CONCLUIDA;Ana Prado
+V-3062;10-03-2025; Loja Centro;Oficina Silva Ltda; PC-1056 ;1;572.48;15;cancelada;Carla Menezes
+V-3197;05/02/2025;Loja Centro;Oficina Almeida Ltda;PC-1030;3;223.21;10,00;concluida;Elaine Rocha
+V-3028;2025-03-03;LOJA CENTRO;Auto Center Souza Ltda;PC-1019;1;466.61;10%;CONCLUIDA;Elaine Rocha
+V-3082;2025-06-07; Loja Centro;Oficina Pereira Ltda;PC-1021;-1;1023.19;0;devolvida;Diego Fontes
+V-3252;2025-04-14;Loja Centro;Centro Automotivo Lima Ltda;pc-1045;1;407,60;5;CANCELADA;Elaine Rocha
+V-3258;2025-06-21;Loja Centro;Mecanica Barbosa Ltda;pc-1049;2;1022.81;0;concluida;Elaine Rocha
+V-3188;2025-04-14;Loja Centro;Oficina Souza Ltda;PC-1029;-2,0;87.50;;devolvida;Diego Fontes
+V-3070;2025-03-19; Loja Centro;Auto Center Ribeiro Ltda;pc-1011;3;955,18;10%;concluida;Ana Prado
+V-3366;31/03/2025;LOJA CENTRO;Centro Automotivo Dias Ltda;PC-1035;-4;1082,44;0;DEVOLVIDA;Elaine Rocha
+V-3128;25/06/2025; Loja Sul;Camila Almeida;PC-1046;1;260.88;0%;concluida;Bruno Tavares
+V-3035;2025-01-07;Loja Sul;Oficina Almeida Ltda;pc-1010;3;1.106,21;0%;Concluida;Carla Menezes
+V-3262;08/04/2025; Loja Norte;Oficina Santos Ltda;PC-1038;2;1.130,84;20;Concluida;Ana Prado
+V-3201;08/01/2025;LOJA SUL;Thiago Teixeira;PC-1035;1;1027.15;5%;CONCLUIDA;Bruno Tavares
+V-3397;2025-01-13;LOJA NORTE;Oficina Rocha Ltda;PC-1038;2;1.103,31;20;CONCLUIDA;Carla Menezes
+V-3302;22-02-2025;LOJA SUL;Rodrigo Almeida;PC-1026;1;78.49;;concluida;Bruno Tavares
+V-3060;2025-06-11; Loja Norte;Mecanica Barbosa Ltda; PC-1050 ;3,0;66.00;0%;CONCLUIDA;Diego Fontes
+V-3048;26/05/2025; Loja Sul;Oficina Ribeiro Ltda;PC-1047;8;631,58;15%;Concluida;Ana Prado
+V-3197;2025-02-05; Loja Centro;Oficina Almeida Ltda;PC-1004;4;323,37;0;concluida;Elaine Rocha
+V-3155;02-06-2025;Loja Norte;Camila Pereira;PC-1046;2;257.41;10,00;concluida;Diego Fontes
+V-3180;2025-06-26;LOJA CENTRO;Mecanica Souza Ltda;PC-1047;1;R$ 662,29;0;Concluida;Bruno Tavares
+V-3133;2025-04-13;LOJA SUL;Auto Center Martins Ltda;pc-1018;1;251,52;;concluida;Bruno Tavares
+V-3310;13/02/2025;LOJA SUL;Mecanica Martins Ltda;PC-1023;2;706,38;;concluida;Bruno Tavares
+V-3004;05/03/2025;Loja Sul;Camila Oliveira;PC-1010;-1;R$ 1.109,09;5%;devolvida;Bruno Tavares
+V-3277;07-01-2025;LOJA SUL;Auto Center Carvalho Ltda;PC-1024;1,0;621,35;5;Concluida;Bruno Tavares
+V-3015;2025-06-11;LOJA NORTE;Oficina Santos Ltda; PC-1028 ;1,0;113,82;0;Concluida;Elaine Rocha
+V-3231;29/04/2025; Loja Sul;Oficina Silva Ltda;PC-1043;2;R$ 554,07;10,00;CONCLUIDA;Diego Fontes
+V-3003;26/01/2025;LOJA CENTRO;Juliana Martins;PC-1021;1,0;1.022,35;5,00;concluida;Elaine Rocha
+V-3157;30-03-2025;Loja Sul;Larissa Oliveira;PC-1016;3;827.55;5;concluida;Carla Menezes
+V-3364;19/04/2025; Loja Centro;Thiago Teixeira;PC-1005;2;518,08;20;concluida;Elaine Rocha
+V-3187;2025-05-30;Loja Norte;Thiago Teixeira;PC-1037;1;R$ 482,09;0;Concluida;Ana Prado
+V-3110;2025-04-11; Loja Norte;Mecanica Martins Ltda;PC-1057;2;157,92;0%;Concluida;Ana Prado
+V-3316;17-06-2025;LOJA NORTE;Oficina Silva Ltda;PC-1014;3;336,68;5%;Concluida;Bruno Tavares
+V-3168;2025-04-30; Loja Centro;Auto Center Teixeira Ltda;PC-1025;2;540,26;0;Cancelada;Elaine Rocha
+V-3241;2025-02-04; Loja Sul;Oficina Santos Ltda;PC-1041;1;844.47;0%;Concluida;Bruno Tavares
+V-3001;2025-06-04; Loja Norte;Larissa Oliveira;PC-1008;1;717.24;0%;CONCLUIDA;Ana Prado
+V-3212;27/05/2025; Loja Norte;Oficina Ribeiro Ltda;PC-1008;1;705,90;20,00;Concluida;Carla Menezes
+V-3096;2025-01-19; Loja Centro;Oficina Ribeiro Ltda;PC-1011;-4;R$ 973,76;;DEVOLVIDA;Bruno Tavares
+V-3385;26/05/2025;LOJA NORTE;Larissa Oliveira;PC-1039;1;1.078,37;0;concluida;Diego Fontes
+V-3235;05-04-2025;LOJA CENTRO;Auto Center Souza Ltda;PC-1016;1;839.98;0;Concluida;Bruno Tavares
+V-3253;16-04-2025; Loja Norte;Auto Center Carvalho Ltda;PC-1049;2;1.005,41;5%;Concluida;Elaine Rocha
+V-3331;2025-02-02; Loja Sul;Centro Automotivo Almeida Ltda;PC-1012;2;94.34;0;Concluida;Bruno Tavares
+V-3025;09/01/2025; Loja Centro;Thiago Pereira;PC-1048;2;447,84;0;CONCLUIDA;Ana Prado
+V-3269;2025-05-01;LOJA SUL;Centro Automotivo Dias Ltda;PC-1015;2;R$ 527,78;5%;Cancelada;Ana Prado
+V-3267;29-03-2025; Loja Centro;Oficina Almeida Ltda;PC-1047;8;656,56;;concluida;Elaine Rocha
+V-3062;10/03/2025;LOJA CENTRO;Oficina Silva Ltda;pc-1015;3,0;498,04;5,00;cancelada;Carla Menezes
+V-3037;18-01-2025; Loja Norte;Centro Automotivo Rocha Ltda; PC-1040 ;6;428.33;;CONCLUIDA;Ana Prado
+V-3170;28/01/2025;LOJA CENTRO;Aline Teixeira;PC-1009;3;464,45;0%;cancelada;Carla Menezes
+V-3119;06/03/2025;LOJA SUL;Thiago Rocha;pc-1008;1;698,71;15;Concluida;Elaine Rocha
+V-3328;15/04/2025; Loja Norte;Auto Center Teixeira Ltda;PC-1055;6;352,06;0;Concluida;Carla Menezes
+V-3313;21/03/2025;LOJA SUL;Oficina Souza Ltda;PC-1005;2;514.10;;CONCLUIDA;Elaine Rocha
+V-3005;2025-02-27; Loja Centro;Camila Carvalho;PC-1007;4;359,05;5,00;Concluida;Carla Menezes
+V-3398;2025-05-10; Loja Norte;Oficina Pereira Ltda;PC-1057;1;152,80;;concluida;Ana Prado
+V-3023;2025-05-26; Loja Centro;Oficina Souza Ltda;PC-1048;2;430,29;0%;CONCLUIDA;Carla Menezes
+V-3134;2025-05-03;Loja Centro;Mecanica Martins Ltda;PC-1056;2,0;551.62;10%;Concluida;Elaine Rocha
+V-3193;02/02/2025; Loja Sul;Oficina Almeida Ltda; PC-1043 ;4,0;560,49;15%;cancelada;Carla Menezes
+V-3313;2025-03-21; Loja Sul;Oficina Souza Ltda;PC-1021;2;1021.70;10%;concluida;Elaine Rocha
+V-3041;2025-01-10;LOJA SUL;Fernanda Pereira;pc-1016;2;837.13;15%;concluida;Carla Menezes
+V-3075;09/03/2025; Loja Norte;Eduardo Santos;PC-1033;2;51,95;0;concluida;Diego Fontes
+V-3279;2025-03-31;LOJA CENTRO;Eduardo Santos;pc-1012;2;96.59;0;cancelada;Bruno Tavares
+V-3155;2025-06-02;LOJA NORTE;Camila Pereira;PC-1057;6;158,43;10%;concluida;Diego Fontes
+V-3379;05/03/2025; Loja Centro;Thiago Carvalho;PC-1057;1;R$ 153,40;0%;CONCLUIDA;Bruno Tavares
+V-3241;2025-02-04; Loja Sul;Oficina Santos Ltda;PC-1013;1,0;811,38;0%;Concluida;Bruno Tavares
+V-3312;22/03/2025;LOJA CENTRO;Thiago Rocha;PC-1026;1;77.92;5%;Concluida;Ana Prado
+V-3061;06/01/2025; Loja Norte;Mecanica Santos Ltda; PC-1038 ;6;1.095,32;0%;CONCLUIDA;Ana Prado
+V-3049;28/05/2025; Loja Centro;Auto Center Barbosa Ltda;PC-1006;-4;701.58;5%;devolvida;Carla Menezes
+V-3027;2025-01-10;LOJA SUL;Rodrigo Rocha;PC-1039;2;R$ 1.062,33;5%;Cancelada;Carla Menezes
+V-3013;15/06/2025; Loja Norte;Mariana Teixeira;PC-1048;1;447,12;10%;CONCLUIDA;Bruno Tavares
+V-3057;2025-01-30;LOJA NORTE;Mecanica Carvalho Ltda;PC-1054;1;897,20;0;Concluida;Bruno Tavares
+V-3309;17/02/2025;Loja Sul;Juliana Santos;PC-1035;3;1068.56;15%;CONCLUIDA;Diego Fontes
+V-3072;21/02/2025;LOJA SUL;Rodrigo Almeida;PC-1033;3;50,05;;concluida;Ana Prado
+V-3196;08-04-2025;LOJA NORTE;Auto Center Ribeiro Ltda;pc-1053;1;825,56;;concluida;Bruno Tavares
+V-3380;2025-06-19;LOJA SUL;Mariana Teixeira;PC-1025;1;541.16;5;CONCLUIDA;Bruno Tavares
+V-3186;27/01/2025; Loja Centro;Aline Ribeiro;PC-1023;2,0;677,15;5;Cancelada;Carla Menezes
+V-3042;2025-03-10;Loja Centro;Oficina Ribeiro Ltda;PC-1025;2;525,69;10%;Cancelada;Diego Fontes
+V-3398;10-05-2025; Loja Norte;Oficina Pereira Ltda;PC-1057; 1 ;152.80;0;Concluida;Ana Prado
+V-3309;2025-02-17;Loja Sul;Juliana Santos;PC-1035;3;1.068,56;15;CONCLUIDA;Diego Fontes
+V-3033;2025-01-17; Loja Norte;Centro Automotivo Almeida Ltda;PC-1017;2;689,44;5;concluida;Ana Prado
+V-3029;27/06/2025;LOJA CENTRO;Oficina Pereira Ltda;pc-1055;1,0;R$ 335,08;5;Concluida;Carla Menezes
+V-3387;23-05-2025;Loja Centro;Auto Center Almeida Ltda;PC-1047; 3 ;663.97;5;Concluida;Carla Menezes
+V-3341;2025-04-15; Loja Norte;Oficina Ribeiro Ltda;pc-1027;6;1037.88;0%;Concluida;Elaine Rocha
+V-3024;2025-01-04; Loja Sul;Mecanica Pereira Ltda; PC-1028 ;2;112,29;15,00;CANCELADA;Carla Menezes
+V-3346;2025-02-21;Loja Sul;Auto Center Carvalho Ltda;pc-1051;1;157,19;;concluida;Elaine Rocha
+V-3087;12/05/2025; Loja Sul;Oficina Santos Ltda;PC-1011;1;935.37;10;Concluida;Carla Menezes
+V-3364;19-04-2025;LOJA CENTRO;Thiago Teixeira;pc-1027;1;1.013,89;15%;CONCLUIDA;Elaine Rocha
+V-3353;25/04/2025;LOJA SUL;Mecanica Barbosa Ltda;PC-1013;4;802.07;15,00;Concluida;Carla Menezes
+V-3093;10-06-2025; Loja Sul;Thiago Carvalho;PC-1030;1;218.90;5%;CONCLUIDA;Ana Prado
+V-3367;10/04/2025;Loja Sul;Centro Automotivo Dias Ltda;PC-1033;1;R$ 51,45;5%;CONCLUIDA;Diego Fontes
+V-3197;05-02-2025;Loja Centro;Oficina Almeida Ltda;PC-1043;1;560,33;0%;Concluida;Elaine Rocha
+V-3034;2025-06-01; Loja Sul;Patricia Oliveira;PC-1052;4;811.99;10%;Concluida;Ana Prado
+V-3200;2025-01-13;Loja Centro;Auto Center Carvalho Ltda;PC-1047;4;656,91;10;CONCLUIDA;Diego Fontes
+V-3356;22/03/2025;Loja Centro;Mecanica Martins Ltda; PC-1054 ;6;859,13;;Concluida;Carla Menezes
+V-3089;06/06/2025; Loja Centro;Juliana Martins;PC-1018;1;260,14;0;CONCLUIDA;Ana Prado
+V-3265;2025-03-26;LOJA SUL;Thiago Rocha;PC-1015;6;507.18;;cancelada;Carla Menezes
+V-3161;2025-05-16; Loja Centro;Oficina Martins Ltda;PC-1049;2;1057.08;0;concluida;Carla Menezes
+V-3242;2025-02-01; Loja Centro;Thiago Teixeira; PC-1015 ;3;500,07;10%;Concluida;Elaine Rocha
+V-3255;28/04/2025; Loja Centro;Gustavo Silva; PC-1037 ;-1;488.05;10,00;Devolvida;Elaine Rocha
+V-3281;2025-05-10;LOJA CENTRO;Oficina Martins Ltda;PC-1007;4;374,38;10;Concluida;Ana Prado
+V-3342;2025-04-19;Loja Centro;Eduardo Dias;PC-1021;8;1026,07;5%;CONCLUIDA;Diego Fontes
+V-3146;26-02-2025;LOJA CENTRO;Thiago Rocha;pc-1035;1;1046,56;0;CONCLUIDA;Elaine Rocha
+V-3054;2025-02-04;LOJA CENTRO;Auto Center Carvalho Ltda;PC-1017;1;658,18;0%;CONCLUIDA;Ana Prado
+V-3123;17/05/2025; Loja Norte;Eduardo Teixeira;PC-1050;2;67.43;5%;Cancelada;Bruno Tavares
+V-3043;07/06/2025;Loja Norte;Eduardo Carvalho;PC-1038;8;1112.92;10%;CANCELADA;Bruno Tavares
+V-3100;31-03-2025;Loja Norte;Centro Automotivo Pereira Ltda;PC-1048;3;448.67;10%;Concluida;Elaine Rocha
+V-3357;2025-06-06; Loja Norte;Oficina Martins Ltda;PC-1005;1;511,65;0%;CANCELADA;Elaine Rocha
+V-3020;08-02-2025; Loja Norte;Oficina Almeida Ltda; PC-1056 ;8;569.13;0%;CONCLUIDA;Diego Fontes
+V-3392;10/05/2025; Loja Sul;Aline Ribeiro; PC-1047 ;1;631.62;20%;CONCLUIDA;Diego Fontes
+V-3246;01/04/2025;Loja Sul;Mariana Teixeira;PC-1035; 6 ;1040.40;;concluida;Carla Menezes
+V-3294;2025-04-25;LOJA SUL;Centro Automotivo Dias Ltda;PC-1034;1;R$ 1.156,61;5;concluida;Ana Prado
+V-3232;03/01/2025; Loja Norte;Centro Automotivo Martins Ltda;PC-1039;4,0;1038.99;20;Concluida;Ana Prado
+V-3279;2025-03-31;Loja Centro;Eduardo Santos;PC-1014;8;330,45;20;cancelada;Bruno Tavares
+V-3160;2025-06-27; Loja Centro;Oficina Ribeiro Ltda;PC-1010;4;1053,49;10%;CONCLUIDA;Bruno Tavares
+V-3154;03/01/2025; Loja Norte;Centro Automotivo Almeida Ltda;PC-1029;3;88,63;0;Concluida;Ana Prado
+V-3133;13/04/2025;Loja Sul;Auto Center Martins Ltda;PC-1025;1;532.10;0%;concluida;Bruno Tavares
+V-3241;2025-02-04;Loja Sul;Oficina Santos Ltda;PC-1016;2;830,26;0;concluida;Bruno Tavares
+V-3200;2025-01-13; Loja Centro;Auto Center Carvalho Ltda;PC-1028;1;113,51;15,00;concluida;Diego Fontes
+V-3264;17/04/2025;LOJA CENTRO;Auto Center Carvalho Ltda;PC-1008;2;703.22;15%;Concluida;Ana Prado
+V-3177;12-02-2025;LOJA SUL;Aline Ribeiro;PC-1032;2;140.74;10,00;concluida;Carla Menezes
+V-3182;21-02-2025; Loja Norte;Oficina Almeida Ltda;PC-1032;2;140,69;;CONCLUIDA;Bruno Tavares
+V-3077;16-05-2025;Loja Centro;Auto Center Almeida Ltda;PC-1026;3;77,86;5,00;Concluida;Bruno Tavares
+V-3131;20/04/2025;LOJA CENTRO;Mecanica Carvalho Ltda;PC-1023;2;717.23;;CONCLUIDA;Ana Prado
+V-3181;30-06-2025;Loja Centro;Auto Center Silva Ltda;PC-1034;4;1166.70;5;CONCLUIDA;Ana Prado
+V-3086;2025-06-02;Loja Centro;Oficina Souza Ltda;PC-1057;2;156.61;0%;CONCLUIDA;Ana Prado
+V-3148;2025-02-13;LOJA CENTRO;Auto Center Teixeira Ltda;PC-1023;2;693.41;0%;CONCLUIDA;Ana Prado
+V-3065;2025-04-14;LOJA NORTE;Centro Automotivo Martins Ltda;PC-1013;2,0;812.70;;Concluida;Ana Prado
+V-3212;27/05/2025;Loja Norte;Oficina Ribeiro Ltda;PC-1012;2;93,09;0;Concluida;Carla Menezes
+V-3163;2025-05-15;Loja Norte;Oficina Carvalho Ltda;PC-1041;1;814,88;;CONCLUIDA;Carla Menezes
+V-3167;2025-04-13;LOJA SUL;Oficina Lima Ltda; PC-1027 ;3;1.023,57;0%;CONCLUIDA;Ana Prado
+V-3216;2025-06-07;Loja Norte;Auto Center Souza Ltda;PC-1024;3;614.49;;CONCLUIDA;Elaine Rocha
+V-3040;2025-05-27; Loja Centro;Auto Center Rocha Ltda;PC-1009;4;461.13;0;Concluida;Ana Prado
+V-3337;2025-01-26;Loja Centro;Juliana Santos;PC-1053;-1;831.22;10,00;DEVOLVIDA;Elaine Rocha
+V-3325;22/01/2025;LOJA CENTRO;Mecanica Oliveira Ltda;PC-1035;1;1069.59;15%;CONCLUIDA;Ana Prado
+V-3052;03-05-2025;LOJA CENTRO;Fernanda Pereira;PC-1007;-4;368.41;0;DEVOLVIDA;Ana Prado
+V-3245;2025-01-31; Loja Norte;Eduardo Teixeira;PC-1007;2,0;362,62;0;concluida;Ana Prado
+V-3159;13/03/2025; Loja Sul;Eduardo Carvalho;pc-1052;2;804.84;0%;concluida;Elaine Rocha
+V-3205;08-03-2025;LOJA CENTRO;Auto Center Carvalho Ltda;PC-1017; 1 ;653,04;0%;CONCLUIDA;Carla Menezes
+V-3146;26/02/2025;Loja Centro;Thiago Rocha;PC-1028;8;111,71;5%;concluida;Elaine Rocha
+V-3081;29-03-2025;Loja Sul;Larissa Oliveira;PC-1051;1;154.31;0;Concluida;Diego Fontes
+V-3207;20/04/2025; Loja Norte;Centro Automotivo Almeida Ltda;PC-1041;4;818,91;0%;concluida;Ana Prado
+V-3203;2025-01-05;LOJA NORTE;Oficina Almeida Ltda;pc-1032;2;135,34;0;Concluida;Bruno Tavares
+V-3092;2025-01-03;LOJA CENTRO;Oficina Martins Ltda;PC-1016;6;819.32;0;CONCLUIDA;Elaine Rocha
+V-3126;2025-04-03;LOJA SUL;Camila Oliveira;pc-1014;2;342.61;0;Cancelada;Elaine Rocha
+V-3324;13-06-2025; Loja Centro;Oficina Martins Ltda;PC-1052;2;816,74;5%;Concluida;Carla Menezes
+V-3305;19-03-2025;Loja Centro;Thiago Rocha;PC-1045;8;419,39;15,00;CONCLUIDA;Ana Prado
+V-3024;04/01/2025; Loja Sul;Mecanica Pereira Ltda;PC-1005; 6 ;R$ 510,97;0;Cancelada;Carla Menezes
+V-3226;2025-04-07; Loja Norte;Auto Center Rocha Ltda;PC-1025;1;509,91;20%;concluida;Carla Menezes
+V-3013;2025-06-15; Loja Norte;Mariana Teixeira;PC-1048;1;447.12;10,00;Concluida;Bruno Tavares
+V-3016;12/02/2025; Loja Sul;Oficina Lima Ltda;PC-1017;1;694.40;5,00;concluida;Carla Menezes
+V-3151;15/06/2025;Loja Sul;Auto Center Almeida Ltda;PC-1046; 1 ;260,11;5,00;CONCLUIDA;Bruno Tavares
+V-3337;26/01/2025;LOJA CENTRO;Juliana Santos;PC-1040;-4;417,86;20%;Devolvida;Elaine Rocha
+V-3286;2025-04-24; Loja Centro;Centro Automotivo Souza Ltda;PC-1021;1;R$ 1.050,09;15%;CONCLUIDA;Bruno Tavares
+V-3194;20-03-2025;Loja Centro;Oficina Ribeiro Ltda;PC-1014;1;348,61;0%;Concluida;Elaine Rocha
+V-3120;2025-02-02;LOJA NORTE;Mecanica Barbosa Ltda;PC-1053;1,0;810,97;5;concluida;Elaine Rocha
+V-3276;04/02/2025;LOJA NORTE;Larissa Oliveira;PC-1052;1;824,38;10%;concluida;Diego Fontes
+V-3105;24/06/2025;LOJA SUL;Oficina Almeida Ltda;PC-1006;2;700.06;;CONCLUIDA;Elaine Rocha
+V-3060;2025-06-11;Loja Norte;Mecanica Barbosa Ltda;PC-1018;2;253.16;10;Concluida;Diego Fontes
+V-3152;2025-03-11; Loja Sul;Aline Teixeira;pc-1056;3;536.43;20%;Concluida;Diego Fontes
+V-3009;01/03/2025; Loja Norte;Oficina Souza Ltda;PC-1008; 1 ;705,72;0%;cancelada;Elaine Rocha
+V-3162;04/04/2025; Loja Centro;Oficina Pereira Ltda;PC-1005;4;498.10;5%;Concluida;Diego Fontes
+V-3384;19-06-2025; Loja Norte;Thiago Rocha;PC-1021;1;1016,12;20,00;Concluida;Carla Menezes
+V-3293;19/03/2025;Loja Sul;Juliana Martins;PC-1055;2;332.80;10%;Concluida;Bruno Tavares
+V-3193;02/02/2025;LOJA SUL;Oficina Almeida Ltda;PC-1026;2;78,40;0;cancelada;Carla Menezes
+V-3231;29/04/2025; Loja Sul;Oficina Silva Ltda;PC-1013;1;811,55;10,00;CONCLUIDA;Diego Fontes
+V-3308;02-06-2025; Loja Centro;Aline Ribeiro;PC-1039;6,0;1.071,75;15%;CONCLUIDA;Bruno Tavares
+V-3014;2025-02-18;LOJA CENTRO;Mecanica Dias Ltda;pc-1004;4;315,41;;Concluida;Carla Menezes
+V-3175;2025-02-15; Loja Norte;Centro Automotivo Almeida Ltda;PC-1018;2;258,00;0%;CONCLUIDA;Ana Prado
+V-3285;18/05/2025;Loja Centro;Auto Center Almeida Ltda;pc-1030;1,0;219.31;20,00;Cancelada;Elaine Rocha
+V-3066;2025-04-05;Loja Centro;Patricia Oliveira;PC-1043;4,0;572.31;;Concluida;Bruno Tavares
+V-3096;2025-01-19;LOJA CENTRO;Oficina Ribeiro Ltda;PC-1045;-3;410.87;0;devolvida;Bruno Tavares
+V-3381;26/03/2025;LOJA CENTRO;Centro Automotivo Pereira Ltda; PC-1057 ;2;154.04;20;Concluida;Carla Menezes
+V-3144;2025-04-01;Loja Sul;Mariana Teixeira;pc-1023;3;714.17;10,00;concluida;Diego Fontes
+V-3311;09-06-2025; Loja Centro;Auto Center Ribeiro Ltda;PC-1015;1;530,91;5,00;CONCLUIDA;Diego Fontes
+V-3271;03/06/2025;Loja Sul;Centro Automotivo Dias Ltda;PC-1024;4;641,15;0;Concluida;Bruno Tavares
+V-3261;06-03-2025;LOJA CENTRO;Oficina Silva Ltda;pc-1032;1;136.87;;CONCLUIDA;Diego Fontes
+V-3167;13/04/2025;Loja Sul;Oficina Lima Ltda;PC-1027;3;1023.57;0;Concluida;Ana Prado
+V-3390;2025-06-19; Loja Centro;Auto Center Santos Ltda;PC-1010;1;1.102,20;15%;concluida;Elaine Rocha
+V-3303;03/06/2025;Loja Centro;Lucas Barbosa;PC-1004;2;324,79;;CONCLUIDA;Diego Fontes
+V-3049;2025-05-28;LOJA CENTRO;Auto Center Barbosa Ltda;PC-1034;-2;1209.98;0;DEVOLVIDA;Carla Menezes
+V-3266;01-06-2025;LOJA CENTRO;Fernanda Oliveira; PC-1016 ;2;R$ 865,66;0;Concluida;Bruno Tavares
+V-3350;20/02/2025;Loja Norte;Centro Automotivo Souza Ltda;pc-1027;8;1.018,12;5%;concluida;Carla Menezes
+V-3073;08-03-2025;LOJA SUL;Mecanica Dias Ltda;PC-1055;1;348,50;0;concluida;Elaine Rocha
+V-3154;2025-01-03;Loja Norte;Centro Automotivo Almeida Ltda;PC-1011; 1 ;938,36;20,00;CONCLUIDA;Ana Prado
+V-3091;19/03/2025;Loja Sul;Oficina Ribeiro Ltda;PC-1030;2;220,42;5,00;Concluida;Ana Prado
+V-3058;2025-02-05; Loja Centro;Mecanica Dias Ltda;PC-1041;6;856,59;0;concluida;Carla Menezes
+V-3125;24/02/2025; Loja Sul;Oficina Santos Ltda;pc-1051;3;151,14;;Concluida;Elaine Rocha
+V-3070;19-03-2025;Loja Centro;Auto Center Ribeiro Ltda;pc-1054;1;864.18;5%;concluida;Ana Prado
+V-3373;22-01-2025;LOJA SUL;Oficina Santos Ltda;PC-1039;8;1021.40;0;Concluida;Carla Menezes
+V-3059;2025-02-07;LOJA NORTE;Camila Oliveira; PC-1032 ;1;138,45;;concluida;Ana Prado
+V-3099;18-06-2025;LOJA SUL;Auto Center Ribeiro Ltda;PC-1026;3;79.62;;concluida;Diego Fontes
+V-3278;23-04-2025;Loja Centro;Auto Center Martins Ltda;PC-1008;4;687.35;0%;cancelada;Carla Menezes
+V-3046;10-05-2025;LOJA CENTRO;Auto Center Barbosa Ltda;PC-1034;6;1215,01;5,00;concluida;Elaine Rocha
+V-3301;16/06/2025;LOJA SUL;Camila Pereira;PC-1038;1;1.103,60;;concluida;Elaine Rocha
+V-3305;2025-03-19;Loja Centro;Thiago Rocha;PC-1015;4;508.03;5,00;CONCLUIDA;Ana Prado
+V-3036;05/01/2025;Loja Sul;Oficina Ribeiro Ltda;PC-1042; 4 ;531,11;0;concluida;Ana Prado
+V-3010;2025-06-11; Loja Sul;Mecanica Oliveira Ltda; PC-1024 ; 2 ;624.30;10,00;Concluida;Carla Menezes
+V-3011;2025-02-22; Loja Norte;Gustavo Silva;PC-1005;2;491.02;5;concluida;Diego Fontes
+V-3058;2025-02-05;LOJA CENTRO;Mecanica Dias Ltda;PC-1056;3,0;568.84;;Concluida;Carla Menezes
+V-3101;15/05/2025;Loja Sul;Eduardo Santos;PC-1039;1;1063.93;;concluida;Elaine Rocha
+V-3226;2025-04-07;LOJA NORTE;Auto Center Rocha Ltda;PC-1025;1;509,91;20,00;Concluida;Carla Menezes
+V-3312;22-03-2025; Loja Centro;Thiago Rocha; PC-1003 ;8;1.094,37;5,00;Concluida;Ana Prado
+V-3135;26-06-2025;Loja Norte;Centro Automotivo Teixeira Ltda;PC-1028;2;108.40;0;CONCLUIDA;Diego Fontes
+V-3355;04/03/2025;Loja Centro;Auto Center Ribeiro Ltda;PC-1043; 1 ;583,88;0%;Concluida;Elaine Rocha
+V-3284;2025-05-26;Loja Norte;Oficina Souza Ltda;PC-1029;3;R$ 86,05;;cancelada;Ana Prado
+V-3396;2025-05-27;Loja Centro;Auto Center Pereira Ltda; PC-1051 ; 2 ;155.68;5,00;Concluida;Carla Menezes
+V-3348;2025-05-28;LOJA NORTE;Centro Automotivo Rocha Ltda; PC-1057 ;-2;150,96;0;devolvida;Ana Prado
+V-3362;2025-04-04; Loja Norte;Eduardo Dias;PC-1047;8,0;655.21;0;concluida;Carla Menezes
+V-3030;26-01-2025;LOJA SUL;Camila Pereira;PC-1056;1;536.35;0%;Concluida;Elaine Rocha
+V-3312;2025-03-22;LOJA CENTRO;Thiago Rocha;pc-1019;2;450,87;5%;CONCLUIDA;Ana Prado
+V-3098;15/06/2025; Loja Norte;Rafael Souza;pc-1030;2;R$ 224,80;0%;Concluida;Diego Fontes
+V-3213;2025-03-25;LOJA NORTE;Centro Automotivo Almeida Ltda;PC-1030;2;222.21;0;concluida;Ana Prado
+V-3128;25/06/2025;Loja Sul;Camila Almeida;PC-1055;1;337,91;10;concluida;Bruno Tavares
+V-3299;23-02-2025; Loja Centro;Auto Center Almeida Ltda;PC-1056;2;572,60;0%;Concluida;Diego Fontes
+V-3256;01-02-2025;Loja Sul;Oficina Pereira Ltda; PC-1033 ;8;50.24;0;Concluida;Diego Fontes
+V-3177;2025-02-12;LOJA SUL;Aline Ribeiro;PC-1028;1;111,56;15;Concluida;Carla Menezes
+V-3118;2025-03-18; Loja Centro;Oficina Teixeira Ltda;PC-1027;2;R$ 1.065,94;0;CONCLUIDA;Ana Prado
+V-3214;2025-01-24;Loja Sul;Thiago Teixeira;PC-1057;4;158,57;0%;concluida;Diego Fontes
+V-3126;03-04-2025;Loja Sul;Camila Oliveira; PC-1040 ; 1 ;438.04;10;Cancelada;Elaine Rocha
+V-3237;25-03-2025;LOJA NORTE;Mariana Teixeira; PC-1025 ;1;512.57;20,00;concluida;Bruno Tavares
+V-3104;18/01/2025;Loja Norte;Oficina Rocha Ltda;PC-1013;1;845.79;;Concluida;Diego Fontes
+V-3002;2025-02-22; Loja Sul;Thiago Carvalho;pc-1043;4;573,05;20;CONCLUIDA;Carla Menezes
+V-3302;22/02/2025;Loja Sul;Rodrigo Almeida;PC-1019;2;449.27;0;CONCLUIDA;Bruno Tavares
+V-3067;25/05/2025; Loja Sul;Beatriz Dias;PC-1015; -1 ;R$ 501,59;0;devolvida;Bruno Tavares
+V-3262;08/04/2025; Loja Norte;Oficina Santos Ltda; PC-1052 ;3;831.90;0;concluida;Ana Prado
+V-3215;17/04/2025;LOJA CENTRO;Juliana Teixeira;PC-1029; 2 ;86,80;0;concluida;Ana Prado
+V-3206;16/03/2025;LOJA CENTRO;Oficina Lima Ltda;pc-1008;1;692,69;5;concluida;Ana Prado
+V-3300;04/05/2025;Loja Norte;Fernanda Oliveira;pc-1030; 2 ;232,13;0;CONCLUIDA;Carla Menezes
+V-3246;01/04/2025; Loja Sul;Mariana Teixeira;PC-1012;1,0;97,35;15,00;CONCLUIDA;Carla Menezes
+V-3133;13/04/2025;Loja Sul;Auto Center Martins Ltda;PC-1035;1;1.056,38;;Concluida;Bruno Tavares
+V-3183;2025-01-23; Loja Centro;Centro Automotivo Martins Ltda;PC-1006;2;688.08;10,00;concluida;Elaine Rocha
+V-3230;26/05/2025;Loja Norte;Patricia Oliveira;PC-1027;3;R$ 1.016,00;10;concluida;Elaine Rocha
+V-3333;25-04-2025;LOJA CENTRO;Rafael Souza;PC-1019;2;476,91;20%;concluida;Carla Menezes
+V-3251;12/02/2025;Loja Centro;Oficina Rocha Ltda;PC-1024;6;649,66;0%;Concluida;Bruno Tavares
+V-3323;2025-01-27; Loja Sul;Thiago Rocha;pc-1018;-3;248,38;10%;Devolvida;Diego Fontes
+V-3272;2025-04-02;Loja Norte;Mecanica Martins Ltda;pc-1011;2,0;982.34;;CONCLUIDA;Carla Menezes
+V-3236;27/06/2025;Loja Norte;Thiago Pereira;PC-1008;1;706,63;0%;concluida;Bruno Tavares
+V-3294;25/04/2025;LOJA SUL;Centro Automotivo Dias Ltda;PC-1019;1;463,82;;concluida;Ana Prado
+V-3395;21/06/2025;LOJA CENTRO;Mecanica Souza Ltda; PC-1041 ; 2 ;842,61;;CANCELADA;Ana Prado
+V-3165;10-05-2025;LOJA SUL;Camila Oliveira;PC-1030;6;226,86;;cancelada;Ana Prado
+V-3297;02/06/2025;Loja Sul;Auto Center Rocha Ltda;pc-1003;4;1098,94;10;concluida;Ana Prado
+V-3393;24/02/2025;Loja Sul;Auto Center Carvalho Ltda;PC-1041;1;R$ 833,56;5,00;CONCLUIDA;Diego Fontes
+V-3144;01/04/2025; Loja Sul;Mariana Teixeira;PC-1037;4,0;493,32;10;concluida;Diego Fontes
+V-3209;06/03/2025; Loja Sul;Centro Automotivo Teixeira Ltda;PC-1029;-6,0;88,17;15;devolvida;Carla Menezes
+V-3154;03/01/2025;Loja Norte;Centro Automotivo Almeida Ltda; PC-1027 ;2;1027.15;5;CONCLUIDA;Ana Prado
+V-3282;20/03/2025;Loja Sul;Oficina Almeida Ltda;PC-1019;1;463,11;0;Concluida;Elaine Rocha
+V-3268;27-02-2025; Loja Norte;Auto Center Santos Ltda;PC-1005;2;507,77;5,00;concluida;Diego Fontes
+V-3184;29/05/2025;Loja Sul;Juliana Santos;PC-1005;-2;496.85;;devolvida;Ana Prado
+V-3126;03/04/2025;Loja Sul;Camila Oliveira;PC-1052;1;791,64;0%;cancelada;Elaine Rocha
+V-3069;2025-04-30;LOJA CENTRO;Centro Automotivo Souza Ltda;PC-1006;4;697,22;0;Concluida;Diego Fontes
+V-3182;21-02-2025; Loja Norte;Oficina Almeida Ltda;PC-1057;4;153.57;;CONCLUIDA;Bruno Tavares
+V-3303;03/06/2025; Loja Centro;Lucas Barbosa;PC-1015;1,0;507,06;;CONCLUIDA;Diego Fontes
+V-3326;24/03/2025;Loja Norte;Rafael Souza;PC-1048;6;R$ 426,45;0;Concluida;Ana Prado
+V-3044;01-05-2025;Loja Norte;Juliana Teixeira;PC-1047;6;646,64;5%;Concluida;Carla Menezes
+V-3306;2025-03-30; Loja Norte;Oficina Martins Ltda;PC-1011;2;938,15;;Concluida;Bruno Tavares
+V-3024;2025-01-04;LOJA SUL;Mecanica Pereira Ltda;PC-1030;1,0;227,15;0%;cancelada;Carla Menezes
+V-3351;2025-02-05; Loja Norte;Oficina Ribeiro Ltda;PC-1023;2;676.91;0%;Concluida;Elaine Rocha
+V-3034;2025-06-01; Loja Sul;Patricia Oliveira;PC-1028;2;109.73;0;CONCLUIDA;Ana Prado
+V-3325;22/01/2025;LOJA CENTRO;Mecanica Oliveira Ltda;PC-1046;2;R$ 255,39;;CONCLUIDA;Ana Prado
+V-3215;2025-04-17;LOJA CENTRO;Juliana Teixeira;PC-1012;1;93.14;20%;concluida;Ana Prado
+V-3352;11/04/2025;LOJA CENTRO;Auto Center Ribeiro Ltda;PC-1038; 1 ;1.113,82;15%;concluida;Diego Fontes
+V-3122;29-05-2025;Loja Sul;Oficina Pereira Ltda;PC-1051;1;153.41;;concluida;Carla Menezes
+V-3009;01/03/2025; Loja Norte;Oficina Souza Ltda;PC-1009;2;R$ 471,18;20;cancelada;Elaine Rocha
+V-3135;2025-06-26;LOJA NORTE;Centro Automotivo Teixeira Ltda;PC-1055;1;345.23;0%;CONCLUIDA;Diego Fontes
+V-3389;2025-04-15;LOJA CENTRO;Centro Automotivo Souza Ltda;PC-1033;3;52.49;0%;Concluida;Bruno Tavares
+V-3208;21-02-2025;LOJA SUL;Centro Automotivo Dias Ltda;PC-1007;4;R$ 366,02;5,00;concluida;Elaine Rocha
+V-3185;14-03-2025;Loja Sul;Camila Carvalho;PC-1039;1;1060,53;10,00;CONCLUIDA;Elaine Rocha
+V-3060;11-06-2025; Loja Norte;Mecanica Barbosa Ltda;PC-1054;3;899,29;15,00;Concluida;Diego Fontes
+V-3195;2025-01-22;Loja Norte;Oficina Santos Ltda; PC-1040 ;3;412,11;5%;concluida;Elaine Rocha
+V-3217;21-05-2025; Loja Norte;Auto Center Rocha Ltda;PC-1010;1;R$ 1.102,35;5%;Concluida;Bruno Tavares
+V-3247;2025-02-24;Loja Centro;Camila Almeida;PC-1033;1;50,62;0;CONCLUIDA;Diego Fontes
+V-3087;2025-05-12; Loja Sul;Oficina Santos Ltda;PC-1032;1;R$ 140,84;15%;Concluida;Carla Menezes
+V-3246;2025-04-01; Loja Sul;Mariana Teixeira;PC-1040;1;422.83;15;CONCLUIDA;Carla Menezes
