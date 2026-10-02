@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoVisão | Painel de autopeças</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar p-3">
+      <a class="brand" href="#"><span class="brand-mark">A</span><span>Auto<span>Visão</span></span></a>
+      <div class="eyebrow mt-5">NAVEGAÇÃO</div>
+      <nav class="nav flex-column gap-1 mt-2">
+        <a class="nav-link active" href="#dashboard"><i class="bi bi-grid-1x2-fill"></i> Visão geral</a>
+        <a class="nav-link" href="#pecas"><i class="bi bi-box-seam"></i> Peças</a>
+        <a class="nav-link" href="#importar"><i class="bi bi-cloud-arrow-up"></i> Importar dados</a>
+      </nav>
+      <div class="sidebar-note mt-auto"><i class="bi bi-lightbulb"></i><p class="mb-0">Use os filtros para encontrar oportunidades de venda e estoque.</p></div>
+    </aside>
+    <main class="content">
+      <header class="topbar"><div><div class="eyebrow">AUTOPEÇAS ANDRADE</div><h1>Visão geral</h1><p class="text-secondary mb-0">Decisões melhores a partir dos seus dados.</p></div><div class="status-pill"><span></span> Banco conectado</div></header>
+      <section class="filters-panel" id="dashboard">
+        <div class="eyebrow mb-3">FILTROS DO PAINEL</div>
+        <div class="row g-2 align-items-end">
+          <div class="col-sm-6 col-lg-2"><label for="inicio">De</label><input id="inicio" class="form-control" type="date"></div>
+          <div class="col-sm-6 col-lg-2"><label for="fim">Até</label><input id="fim" class="form-control" type="date"></div>
+          <div class="col-sm-6 col-lg-2"><label for="loja">Loja</label><select id="loja" class="form-select"><option value="">Todas as lojas</option></select></div>
+          <div class="col-sm-6 col-lg-2"><label for="categoria">Categoria</label><select id="categoria" class="form-select"><option value="">Todas as categorias</option></select></div>
+          <div class="col-lg-2"><button id="aplicar" class="btn btn-primary w-100"><i class="bi bi-funnel me-1"></i> Aplicar filtros</button></div>
+          <div class="col-lg-2"><button id="limpar" class="btn btn-light w-100">Limpar</button></div>
+        </div>
+      </section>
+      <div id="alerta" class="alert d-none mt-3"></div>
+      <section class="row g-3 mt-1">
+        <div class="col-sm-6 col-xl-3"><div class="metric-card blue"><div class="metric-icon"><i class="bi bi-currency-dollar"></i></div><div class="eyebrow">FATURAMENTO LÍQUIDO</div><strong id="faturamento">R$ 0,00</strong><small id="periodo">Período completo</small></div></div>
+        <div class="col-sm-6 col-xl-3"><div class="metric-card green"><div class="metric-icon"><i class="bi bi-graph-up-arrow"></i></div><div class="eyebrow">MARGEM</div><strong id="margem">R$ 0,00</strong><small id="margem-percentual">0% do faturamento</small></div></div>
+        <div class="col-sm-6 col-xl-3"><div class="metric-card orange"><div class="metric-icon"><i class="bi bi-receipt"></i></div><div class="eyebrow">VENDAS CONCLUÍDAS</div><strong id="vendas">0</strong><small id="unidades">0 unidades vendidas</small></div></div>
+        <div class="col-sm-6 col-xl-3"><div class="metric-card purple"><div class="metric-icon"><i class="bi bi-exclamation-triangle"></i></div><div class="eyebrow">ESTOQUE PARADO</div><strong id="paradas">0 peças</strong><small id="capital">R$ 0,00 em custo parado</small></div></div>
+      </section>
+      <section class="row g-3 mt-1"><div class="col-xl-8"><div class="panel chart-panel"><div class="panel-heading"><div><div class="eyebrow">DESEMPENHO</div><h2>Faturamento e margem por categoria</h2></div><span class="hint">Vendas concluídas</span></div><div class="chart-wrap"><canvas id="categoriasChart"></canvas></div><div id="categorias-list" class="category-summary"></div></div></div><div class="col-xl-4"><div class="panel chart-panel"><div class="panel-heading"><div><div class="eyebrow">EVOLUÇÃO</div><h2>Faturamento mensal</h2></div></div><div class="chart-wrap"><canvas id="mesesChart"></canvas></div></div></div></section>
+      <section class="row g-3 mt-1"><div class="col-xl-7"><div class="panel"><div class="panel-heading"><div><div class="eyebrow">OPORTUNIDADE</div><h2>Peças que mais saem</h2></div><span class="hint">Unidades</span></div><div id="top-pecas" class="rank-list"></div></div></div><div class="col-xl-5"><div class="panel"><div class="panel-heading"><div><div class="eyebrow">ATENÇÃO</div><h2>Estoque sem venda</h2></div><span class="count-badge" id="paradas-badge">0</span></div><div id="lista-paradas" class="stalled-list"></div></div></div></section>
+      <section class="panel mt-3" id="pecas"><div class="panel-heading"><div><div class="eyebrow">CADASTRO</div><h2>Peças</h2><p class="text-secondary mb-0">Pesquise, ordene e atualize o catálogo.</p></div><button class="btn btn-primary" id="nova-peca"><i class="bi bi-plus-lg me-1"></i> Nova peça</button></div><div class="row g-2 mb-3"><div class="col-md-5"><input id="busca" class="form-control" placeholder="Buscar por SKU, nome ou fornecedor"></div><div class="col-md-3"><select id="filtro-categoria" class="form-select"><option value="">Todas as categorias</option></select></div><div class="col-md-2"><input id="min" class="form-control" type="number" min="0" step="0.01" placeholder="Custo mínimo"></div><div class="col-md-2"><input id="max" class="form-control" type="number" min="0" step="0.01" placeholder="Custo máximo"></div></div><div class="table-responsive"><table class="table align-middle"><thead><tr><th data-sort="sku">SKU <i class="bi bi-arrow-down-up"></i></th><th data-sort="nome">Peça <i class="bi bi-arrow-down-up"></i></th><th data-sort="categoria">Categoria</th><th data-sort="custo">Custo <i class="bi bi-arrow-down-up"></i></th><th data-sort="estoque">Estoque <i class="bi bi-arrow-down-up"></i></th><th></th></tr></thead><tbody id="pecas-tbody"></tbody></table></div><div class="table-footer"><span id="paginacao-info">0 peças</span><div><button id="anterior" class="btn btn-sm btn-light">Anterior</button> <button id="proxima" class="btn btn-sm btn-light">Próxima</button></div></div></section>
+      <section class="panel mt-3 mb-5" id="importar"><div class="panel-heading"><div><div class="eyebrow">DADOS</div><h2>Importar catálogo</h2><p class="text-secondary mb-0">Carregue um CSV e visualize as alterações neste navegador.</p></div></div><div class="upload-box"><i class="bi bi-filetype-csv"></i><div><strong>CSV de peças</strong><p class="mb-0 text-secondary">SKU, nome_peca, categoria, custo_unitario, fornecedor, estoque_atual</p></div><input id="arquivo" type="file" accept=".csv,text/csv" class="form-control" style="max-width:270px"><button id="importar-btn" class="btn btn-outline-primary">Carregar no painel</button></div><div id="importacao-resultado" class="small text-secondary mt-2"></div></section>
+    </main>
+  </div>
+  <div class="modal fade" id="pecaModal" tabindex="-1"><div class="modal-dialog"><form class="modal-content" id="peca-form"><div class="modal-header"><h5 class="modal-title" id="modal-title">Nova peça</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><input type="hidden" id="peca-id"><div class="row g-3"><div class="col-5"><label>SKU</label><input id="form-sku" class="form-control" required maxlength="50"></div><div class="col-7"><label>Nome da peça</label><input id="form-nome" class="form-control" required></div><div class="col-6"><label>Categoria</label><input id="form-categoria" class="form-control" required></div><div class="col-6"><label>Fornecedor</label><input id="form-fornecedor" class="form-control"></div><div class="col-6"><label>Custo unitário</label><input id="form-custo" type="number" min="0" step="0.01" class="form-control" required></div><div class="col-6"><label>Estoque</label><input id="form-estoque" type="number" min="0" step="1" class="form-control" required></div></div><div id="form-error" class="alert alert-danger d-none mt-3 mb-0"></div></div><div class="modal-footer"><button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button><button class="btn btn-primary">Salvar peça</button></div></form></div></div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="/js/app.js"></script>
+</body>
+</html>
