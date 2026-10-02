@@ -1,21 +1,24 @@
-const pool = require('../config/database');
 const prisma = require('../config/prisma');
 
 async function inserirPeca(peca) {
-  const query = `
-    INSERT INTO pecas (sku, nome_peca, categoria, custo_unitario, fornecedor, estoque_atual)
-    VALUES ($1, $2, $3, $4, $5, $6)
-    ON CONFLICT (sku) DO UPDATE SET
-      nome_peca = EXCLUDED.nome_peca,
-      categoria = EXCLUDED.categoria,
-      custo_unitario = EXCLUDED.custo_unitario,
-      fornecedor = EXCLUDED.fornecedor,
-      estoque_atual = EXCLUDED.estoque_atual
-    RETURNING *
-  `;
-  const values = [peca.sku, peca.nome_peca, peca.categoria, peca.custo_unitario, peca.fornecedor, peca.estoque_atual];
-  const resultado = await pool.query(query, values);
-  return resultado.rows[0] ?? null;
+  return prisma.pecas.upsert({
+    where: { sku: peca.sku },
+    update: {
+      nome_peca: peca.nome_peca,
+      categoria: peca.categoria,
+      custo_unitario: peca.custo_unitario,
+      fornecedor: peca.fornecedor,
+      estoque_atual: peca.estoque_atual
+    },
+    create: {
+      sku: peca.sku,
+      nome_peca: peca.nome_peca,
+      categoria: peca.categoria,
+      custo_unitario: peca.custo_unitario,
+      fornecedor: peca.fornecedor,
+      estoque_atual: peca.estoque_atual
+    }
+  });
 }
 
 async function listarPecas() {
@@ -27,4 +30,7 @@ async function buscarPecaPorId(id) {
 async function buscarPecaPorSku(sku) {
   return prisma.pecas.findUnique({ where: { sku } });
 }
-module.exports = { inserirPeca, listarPecas, buscarPecaPorId, buscarPecaPorSku };
+async function deletarPeca(id) {
+  return prisma.pecas.delete({ where: { id: Number(id) } });
+}
+module.exports = { inserirPeca, listarPecas, buscarPecaPorId, buscarPecaPorSku, deletarPeca };

@@ -6,6 +6,7 @@ const path = require('path');
 
 const pecasRoutes = require('./routes/peca.routes');
 const vendasRoutes = require('./routes/vendas.routes');
+const dashboardRoutes = require('./routes/dashboard.routes');
 const pool = require('./config/database');
 
 const app = express();
@@ -14,6 +15,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/pecas', pecasRoutes);
 app.use('/vendas', vendasRoutes);
+app.use('/dashboard', dashboardRoutes);
 app.use(express.static(path.join(__dirname, '../frontend')));
 
 app.get('/health', (req, res) => {

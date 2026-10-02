@@ -11,5 +11,8 @@ async function buscarPorId(id) {
 async function inserir(peca) {
   return pecasRepository.inserirPeca(peca);
 }
+async function deletarPeca(id) {
+    return pecasRepository.deletarPeca(id);
+}
 
-module.exports = { listar, buscarPorId, inserir };
+module.exports = { listar, buscarPorId, inserir, deletarPeca };
