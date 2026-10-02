@@ -6,13 +6,18 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "import": "node src/scripts/import-csv.js"
+    "import": "node src/scripts/import-csv.js",
+    "prisma:validate": "prisma validate",
+    "prisma:generate": "prisma generate",
+    "prisma:status": "prisma migrate status",
+    "prisma:studio": "prisma studio"
   },
   "keywords": [],
   "author": "Lucas Lenz Chaves Da Silva",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@prisma/client": "^6.19.3",
     "cors": "^2.8.6",
     "csv-parser": "^3.2.1",
     "dotenv": "^18.0.4",
@@ -20,6 +25,12 @@
     "pg": "^8.23.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "prisma": "^6.19.3"
+  },
+  "allowScripts": {
+    "@prisma/client@6.19.3": true,
+    "prisma@6.19.3": true,
+    "@prisma/engines@6.19.3": true
   }
 }
