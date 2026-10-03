@@ -48,6 +48,9 @@ async function buscarPorId(req, res) {
 async function inserir(req, res) {
   const peca = req.body;
   try {
+    if (!verificarDadosValidos(peca)) {
+      return res.status(400).json({ mensagem: 'dados inválidos' });
+    }
     await pecasService.inserir(peca);
     res.status(201).json({ mensagem: 'Peça inserida com sucesso' });
   } catch (erro) {

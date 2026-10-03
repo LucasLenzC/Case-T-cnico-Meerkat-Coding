@@ -34,7 +34,7 @@
       <section class="row g-3">
         <div class="col-md-4">
           <div class="metric-card blue">
-            <div class="eyebrow">FATURAMENTO</div>
+            <div class="eyebrow">FATURAMENTO LIQUIDO</div>
             <strong id="faturamento">—</strong>
             <small id="periodo"></small>
           </div>
@@ -55,7 +55,7 @@
         </div>
       </section>
 
-      <!-- 2. Categorias e estoque: listas recebidas no mesmo resumo. -->
+
       <section class="row g-3 mt-1">
         <div class="col-xl-7">
           <div class="panel">
@@ -82,6 +82,15 @@
         <div class="panel-heading">
           <div><h2>Catálogo de peças</h2><p class="text-secondary mb-0">Peças cadastradas no banco de dados.</p></div>
           <button id="atualizar-pecas" class="btn btn-light">Atualizar catálogo</button>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6 col-lg-5">
+            <label for="pesquisa-pecas" class="form-label">Pesquisar peças</label>
+            <div class="input-group">
+              <span class="input-group-text bg-light"><i class="bi bi-search" aria-hidden="true"></i></span>
+              <input type="search" id="pesquisa-pecas" class="form-control" placeholder="Nome ou SKU da peça">
+            </div>
+          </div>
         </div>
         <div class="table-responsive">
           <table class="table align-middle">

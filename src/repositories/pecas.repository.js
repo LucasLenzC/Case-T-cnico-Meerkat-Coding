@@ -1,7 +1,8 @@
 const prisma = require('../config/prisma');
 
 async function inserirPeca(peca) {
-  return prisma.pecas.upsert({
+  
+ return prisma.pecas.upsert({
     where: { sku: peca.sku },
     update: {
       nome_peca: peca.nome_peca,
@@ -19,12 +20,16 @@ async function inserirPeca(peca) {
       estoque_atual: peca.estoque_atual
     }
   });
-}
+  }
+ 
+
 
 async function listarPecas() {
+
   return prisma.pecas.findMany({ orderBy: { id: 'asc' } });
 }
 async function buscarPecaPorId(id) {
+  
   return prisma.pecas.findUnique({ where: { id: Number(id) } });
 }
 async function buscarPecaPorSku(sku) {

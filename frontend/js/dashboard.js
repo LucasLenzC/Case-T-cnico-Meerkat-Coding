@@ -5,7 +5,7 @@ function exibirIndicadores(resumo) {
   $('vendas').textContent = number(resumo.vendas);
   $('unidades').textContent = `${number(resumo.unidades)} unidades vendidas`;
   $('capital').textContent = `${money(resumo.capitalParado)} em custo parado`;
-  $('periodo').textContent = `${number(resumo.itens)} registros em vendas concluídas`;
+  $('periodo').textContent = `${number(resumo.itens)} itens de venda`;
 }
 
 function exibirCategorias(categorias) {
