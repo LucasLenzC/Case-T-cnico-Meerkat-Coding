@@ -33,4 +33,11 @@ async function buscarPecaPorSku(sku) {
 async function deletarPeca(id) {
   return prisma.pecas.delete({ where: { id: Number(id) } });
 }
-module.exports = { inserirPeca, listarPecas, buscarPecaPorId, buscarPecaPorSku, deletarPeca };
+async function atualizarPeca(id, pecaAtualizada) {
+  const pecaExistente = await prisma.pecas.findUnique({ where: { id: Number(id) } });
+  if (!pecaExistente) {
+    throw new Error('Peça não encontrada');
+  }
+ return prisma.pecas.update({ where: { id: Number(id) }, data: pecaAtualizada });
+}
+module.exports = { inserirPeca, listarPecas, buscarPecaPorId, buscarPecaPorSku, deletarPeca, atualizarPeca };
