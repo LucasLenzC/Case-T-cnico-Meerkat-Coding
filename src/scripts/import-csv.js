@@ -1,102 +1,101 @@
-const fs = require('fs');
+const fs = require('node:fs');
+const path = require('node:path');
+const { pipeline } = require('node:stream/promises');
 const csv = require('csv-parser');
-const path = require('path');
-require('dotenv').config();
+const { normalizaPeca, normalizaVenda } = require('../utils/normalizacao');
 
-const { inserirPeca } = require('../repositories/pecas.repository');
-const { inserirVenda } = require('../repositories/vendas.repository');
-function normalizarNumero(valor) {
-    let texto = String(valor ?? '')
-        .trim()
-        .replace("R$", '')
-        .replace('%', '');
+function novoResumo(arquivo) {
+  return { arquivo, lidos: 0, validos: 0, inseridos: 0, atualizados: 0, rejeitados: 0, motivos: {}, rejeicoes: [] };
+}
 
-    if (texto.includes(',') && texto.includes('.')) {
-        texto = texto.replace(/\./g, '').replace(',', '.');
-    } else if (texto.includes(',')) {
-        texto = texto.replace(',', '.');
+async function importarArquivo({ arquivo, normalizar, salvar, existentes, chave, simular }) {
+  const resumo = novoResumo(path.basename(arquivo));
+  await pipeline(
+    fs.createReadStream(arquivo),
+    csv({ separator: ';', strict: true, mapHeaders: ({ header }) => header.replace(/^\uFEFF/, '').trim() }),
+    async function (linhas) {
+      for await (const linha of linhas) {
+        resumo.lidos += 1;
+        try {
+          const registro = normalizar(linha);
+          const identificador = chave(registro);
+          const jaExiste = existentes.has(identificador);
+          if (!simular) await salvar(registro);
+          existentes.add(identificador);
+          resumo.validos += 1;
+          resumo[jaExiste ? 'atualizados' : 'inseridos'] += 1;
+        } catch (erro) {
+
+
+          const motivo = erro.code ? `Falha ao salvar (${erro.code})` : erro.message;
+          resumo.rejeitados += 1;
+          resumo.motivos[motivo] = (resumo.motivos[motivo] || 0) + 1;
+          resumo.rejeicoes.push({ registro: resumo.lidos, sku: String(linha.sku || '').trim(), motivo });
+        }
+      }
     }
-
-    return Number(texto);
-}
-function normalizaPeca(linha) {
-    return {
-        sku: linha.sku.trim().toUpperCase(),
-        nome_peca: linha.nome_peca.trim(),
-        categoria: linha.categoria.trim(),
-        custo_unitario: normalizarNumero(linha.custo_unitario),
-        fornecedor: linha.fornecedor.trim(),
-        estoque_atual: Number(linha.estoque_atual.trim())
-    };
+  );
+  return resumo;
 }
 
-function normalizaVenda(linha) {
-    return {
-        id_venda: linha.id_venda.trim(),
-        data_venda: linha.data_venda.trim(),
-        loja: linha.loja.trim(),
-        cliente: linha.cliente.trim(),
-        sku: linha.sku.trim().toUpperCase(),
-        quantidade: normalizarNumero(linha.quantidade),
-        preco_unitario: normalizarNumero(linha.preco_unitario),
-        desconto: normalizarNumero(linha.desconto) / 100,
-        status: linha.status.trim().toLowerCase(),
-        vendedor: linha.vendedor.trim()
-    };
+function exibirResumo(resumo, simular) {
+  console.log(`\n${resumo.arquivo}${simular ? ' — SIMULAÇÃO (nenhum dado salvo)' : ''}`);
+  console.log(`Registros lidos: ${resumo.lidos}`);
+  console.log(`Registros válidos${simular ? '' : ' e salvos'}: ${resumo.validos}`);
+  console.log(`Registros ${simular ? 'a inserir' : 'inseridos'}: ${resumo.inseridos}`);
+  console.log(`Registros ${simular ? 'a atualizar' : 'atualizados'}: ${resumo.atualizados}`);
+  console.log(`Registros rejeitados: ${resumo.rejeitados}`);
+  for (const [motivo, quantidade] of Object.entries(resumo.motivos)) {
+    console.log(`- ${motivo}: ${quantidade}`);
+  }
 }
 
-const pecasPath = path.join(__dirname, '../../dados/pecas.csv');
-const vendasPath = path.join(__dirname, '../../dados/vendas.csv');
-
-const pecas = [];
-const vendas = [];
-
-fs.createReadStream(pecasPath)
-    .pipe(csv({ separator: ';' }))
-    .on('data', (linha) => {
-        const peca = normalizaPeca(linha);
-
-        pecas.push(peca);
-
-    })
-    .on('end', async () => {
-        console.log(`Peças lidas: ${pecas.length}`);
-        console.log('Primeira peça:', pecas[0]);
-        try {
-            for (const peca of pecas) {
-                await inserirPeca(peca);
-            }
-            console.log(`Peças importadas: ${pecas.length}`);
-        } catch (erro) {
-            console.error('Erro ao importar peças:', erro.message);
-        }
-
-
-    })
-    .on('error', (erro) => {
-        console.error('Erro ao ler peças:', erro.message);
+async function executarImportacao() {
+  const prisma = require('../config/prisma');
+  const { inserirPeca } = require('../repositories/pecas.repository');
+  const { inserirVenda } = require('../repositories/vendas.repository');
+  const simular = process.argv.includes('--dry-run');
+  const chaveVenda = registro => JSON.stringify([registro.id_venda, registro.sku]);
+  try {
+    const pecasExistentes = new Set((await prisma.pecas.findMany({ select: { sku: true } })).map(p => p.sku));
+    const vendasExistentes = new Set((await prisma.vendas.findMany({ select: { id_venda: true, sku: true } })).map(chaveVenda));
+    const pecas = await importarArquivo({
+      arquivo: path.join(__dirname, '../../dados/pecas.csv'),
+      normalizar: normalizaPeca,
+      salvar: inserirPeca,
+      existentes: pecasExistentes,
+      chave: p => p.sku,
+      simular
     });
-
-fs.createReadStream(vendasPath)
-    .pipe(csv({ separator: ';' }))
-    .on('data', async (linha) => {
+    exibirResumo(pecas, simular);
+    const vendas = await importarArquivo({
+      arquivo: path.join(__dirname, '../../dados/vendas.csv'),
+      normalizar: linha => {
         const venda = normalizaVenda(linha);
-        vendas.push(venda);
-
-    })
-    .on('end', async () => {
-        console.log(`Vendas lidas: ${vendas.length}`);
-        console.log('Primeira venda:', vendas[0]);
-        try {
-            for (const venda of vendas) {
-                await inserirVenda(venda);
-            }
-            console.log(`Vendas importadas: ${vendas.length}`);
-        } catch (erro) {
-            console.error('Erro ao importar vendas:', erro.message);
-        }
-    })
-    .on('error', (erro) => {
-        console.error('Erro ao ler vendas:', erro.message);
+        if (!pecasExistentes.has(venda.sku)) throw new Error('SKU inexistente');
+        return venda;
+      },
+      salvar: inserirVenda,
+      existentes: vendasExistentes,
+      chave: chaveVenda,
+      simular
     });
+    exibirResumo(vendas, simular);
+    const pasta = path.join(__dirname, '../../relatorios');
+    fs.mkdirSync(pasta, { recursive: true });
+    const destino = path.join(pasta, `importacao-${simular ? 'simulacao-' : ''}${new Date().toISOString().replace(/[:.]/g, '-')}.json`);
+    fs.writeFileSync(destino, JSON.stringify({ simular, geradoEm: new Date().toISOString(), pecas, vendas }, null, 2));
+    console.log(`\nRelatório detalhado: ${destino}`);
+  } finally {
+    await prisma.$disconnect();
+  }
+}
 
+if (require.main === module) {
+  executarImportacao().catch(erro => {
+    console.error('Importação interrompida:', erro.message);
+    process.exitCode = 1;
+  });
+}
+
+module.exports = { importarArquivo, executarImportacao };

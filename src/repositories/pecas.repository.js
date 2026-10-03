@@ -1,29 +1,8 @@
 const prisma = require('../config/prisma');
 
 async function inserirPeca(peca) {
-  
- return prisma.pecas.upsert({
-    where: { sku: peca.sku },
-    update: {
-      nome_peca: peca.nome_peca,
-      categoria: peca.categoria,
-      custo_unitario: peca.custo_unitario,
-      fornecedor: peca.fornecedor,
-      estoque_atual: peca.estoque_atual
-    },
-    create: {
-      sku: peca.sku,
-      nome_peca: peca.nome_peca,
-      categoria: peca.categoria,
-      custo_unitario: peca.custo_unitario,
-      fornecedor: peca.fornecedor,
-      estoque_atual: peca.estoque_atual
-    }
-  });
-  }
- 
-
-
+  return prisma.pecas.create({ data: peca });
+}
 async function listarPecas({ texto, categoria, precoMin, precoMax, page, pageSize, sortBy, order }) {
   const filtros = [];
 
@@ -36,7 +15,7 @@ async function listarPecas({ texto, categoria, precoMin, precoMax, page, pageSiz
     });
   }
   if (categoria) {
-    filtros.push({ categoria: { equals: categoria, mode: 'insensitive' } });
+    filtros.push({ categoria: { equals: categoria.trim(), mode: 'insensitive' } });
   }
   if (precoMin !== undefined || precoMax !== undefined) {
     filtros.push({
@@ -74,6 +53,10 @@ async function buscarPecaPorSku(sku) {
   return prisma.pecas.findUnique({ where: { sku } });
 }
 async function deletarPeca(id) {
+  const pecaExistente = await prisma.pecas.findUnique({ where: { id: Number(id) } });
+  if (!pecaExistente) {
+    throw new Error('Peça não encontrada');
+  }
   return prisma.pecas.delete({ where: { id: Number(id) } });
 }
 async function atualizarPeca(id, pecaAtualizada) {

@@ -1,4 +1,5 @@
 const pecasRepository = require('../repositories/pecas.repository');
+const { normalizaPeca, normalizarCategoria } = require('../utils/normalizacao');
 
 async function listar(filtros = {}) {
   const page = Math.max(Number.parseInt(filtros.page, 10) || 1, 1);
@@ -15,7 +16,7 @@ async function listar(filtros = {}) {
 
   return pecasRepository.listarPecas({
     texto: String(filtros.texto || '').trim(),
-    categoria: String(filtros.categoria || '').trim(),
+    categoria: filtros.categoria ? normalizarCategoria(filtros.categoria) : '',
     precoMin: Number.isFinite(precoMin) ? precoMin : undefined,
     precoMax: Number.isFinite(precoMax) ? precoMax : undefined,
     page,
@@ -30,16 +31,17 @@ async function buscarPorId(id) {
 }
 
 async function inserir(peca) {
-  return pecasRepository.inserirPeca(peca);
+  const pecaNormalizada = normalizaPeca(peca);
+  return pecasRepository.inserirPeca(pecaNormalizada);
 }
 async function deletarPeca(id) {
+
     return pecasRepository.deletarPeca(id);
 }
 async function atualizarPeca(id, pecaAtualizada) {
-    const pecaExistente = await pecasRepository.buscarPecaPorId(id);
-    if (!pecaExistente) {
-        throw new Error('Peça não encontrada');
-    }
+
+
+    const pecaNormalizada = normalizaPeca(pecaAtualizada);
     const camposPermitidos = [
         'sku',
         'nome_peca',
@@ -50,8 +52,8 @@ async function atualizarPeca(id, pecaAtualizada) {
     ];
     const dadosAtualizacao = Object.fromEntries(
         camposPermitidos
-            .filter((campo) => Object.prototype.hasOwnProperty.call(pecaAtualizada, campo))
-            .map((campo) => [campo, pecaAtualizada[campo]])
+            .filter((campo) => Object.prototype.hasOwnProperty.call(pecaNormalizada, campo))
+            .map((campo) => [campo, pecaNormalizada[campo]])
     );
     return pecasRepository.atualizarPeca(id, dadosAtualizacao);
 }

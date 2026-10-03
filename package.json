@@ -7,6 +7,7 @@
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
     "import": "node src/scripts/import-csv.js",
+    "test:import": "node --test tests/import-csv.test.js",
     "prisma:validate": "prisma validate",
     "prisma:generate": "prisma generate",
     "prisma:status": "prisma migrate status",

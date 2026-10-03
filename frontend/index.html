@@ -31,10 +31,42 @@
 
       <div id="alerta" class="alert d-none mt-3" role="alert"></div>
 
+      <section class="panel mb-3" id="filtros-dashboard">
+        <div class="panel-heading mb-2">
+          <div>
+            <h2>Filtros do dashboard</h2>
+            <p class="text-secondary mb-0">Atualize os indicadores e gráficos por período, loja ou categoria.</p>
+          </div>
+          <button id="limpar-filtros-dashboard" class="btn btn-light" type="button">Limpar filtros</button>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-3">
+            <label for="dashboard-data-inicial" class="form-label">Data inicial</label>
+            <input id="dashboard-data-inicial" class="form-control" type="date">
+          </div>
+          <div class="col-md-3">
+            <label for="dashboard-data-final" class="form-label">Data final</label>
+            <input id="dashboard-data-final" class="form-control" type="date">
+          </div>
+          <div class="col-md-3">
+            <label for="dashboard-loja" class="form-label">Loja</label>
+            <select id="dashboard-loja" class="form-select">
+              <option value="">Todas as lojas</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="dashboard-categoria" class="form-label">Categoria</label>
+            <select id="dashboard-categoria" class="form-select">
+              <option value="">Todas as categorias</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
       <section class="row g-3">
         <div class="col-md-4">
           <div class="metric-card blue">
-            <div class="eyebrow">FATURAMENTO LIQUIDO</div>
+            <div class="eyebrow">FATURAMENTO LÍQUIDO</div>
             <strong id="faturamento">—</strong>
             <small id="periodo"></small>
           </div>
@@ -48,7 +80,7 @@
         </div>
         <div class="col-md-4">
           <div class="metric-card orange">
-            <div class="eyebrow">VENDAS CONCLUÍDAS</div>
+            <div class="eyebrow">PEDIDOS CONCLUÍDOS</div>
             <strong id="vendas">—</strong>
             <small id="unidades"></small>
           </div>
@@ -77,11 +109,89 @@
         </div>
       </section>
 
+      <section class="row g-3 mt-1" id="graficos-dashboard">
+        <div class="col-xl-7">
+          <div class="panel h-100">
+            <div class="panel-heading">
+              <div>
+                <h2>Resultado por categoria</h2>
+                <p class="text-secondary mb-0">Faturamento e margem das vendas concluídas.</p>
+              </div>
+            </div>
+            <div class="chart-wrap"><canvas id="grafico-categorias" aria-label="Resultado por categoria"></canvas></div>
+          </div>
+        </div>
+        <div class="col-xl-5">
+          <div class="panel h-100">
+            <div class="panel-heading">
+              <div>
+                <h2>Pedidos por status</h2>
+                <p class="text-secondary mb-0">Concluídos e não concluídos.</p>
+              </div>
+            </div>
+            <div class="chart-wrap"><canvas id="grafico-status" aria-label="Pedidos concluídos e não concluídos"></canvas></div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Pedidos concluídos por dia</h2>
+                <p class="text-secondary mb-0">Quantidade de pedidos concluídos em cada data.</p>
+              </div>
+            </div>
+            <div class="chart-wrap"><canvas id="grafico-vendas-dia" aria-label="Pedidos concluídos por dia"></canvas></div>
+          </div>
+        </div>
+      </section>
+
       <!-- 3. Catálogo: lista recebida de GET /pecas. -->
       <section class="panel mt-3 mb-5" id="pecas">
         <div class="panel-heading">
           <div><h2>Catálogo de peças</h2><p class="text-secondary mb-0">Peças cadastradas no banco de dados.</p></div>
-          <button id="atualizar-pecas" class="btn btn-light">Atualizar catálogo</button>
+          <div class="d-flex gap-2">
+            <button id="nova-peca" class="btn btn-primary" type="button"><i class="bi bi-plus-lg"></i> Nova peça</button>
+            <button id="atualizar-pecas" class="btn btn-light" type="button">Atualizar catálogo</button>
+          </div>
+        </div>
+        <div id="form-peca-wrapper" class="bg-light border rounded-3 p-3 mb-4 d-none">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3 id="form-peca-titulo" class="h5 mb-0">Cadastrar peça</h3>
+            <button id="cancelar-peca" class="btn btn-sm btn-light" type="button">Cancelar</button>
+          </div>
+          <form id="form-peca" novalidate>
+            <input type="hidden" id="peca-id">
+            <div class="row g-3">
+              <div class="col-md-3">
+                <label for="peca-sku" class="form-label">SKU</label>
+                <input id="peca-sku" class="form-control" maxlength="50" required>
+              </div>
+              <div class="col-md-5">
+                <label for="peca-nome" class="form-label">Nome da peça</label>
+                <input id="peca-nome" class="form-control" required>
+              </div>
+              <div class="col-md-4">
+                <label for="peca-categoria" class="form-label">Categoria</label>
+                <input id="peca-categoria" class="form-control" required>
+              </div>
+              <div class="col-md-3">
+                <label for="peca-custo" class="form-label">Custo unitário</label>
+                <input id="peca-custo" class="form-control" type="number" min="0" step="0.01" required>
+              </div>
+              <div class="col-md-5">
+                <label for="peca-fornecedor" class="form-label">Fornecedor</label>
+                <input id="peca-fornecedor" class="form-control">
+              </div>
+              <div class="col-md-4">
+                <label for="peca-estoque" class="form-label">Estoque atual</label>
+                <input id="peca-estoque" class="form-control" type="number" min="0" step="1" required>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end gap-2 mt-3">
+              <button id="cancelar-peca-rodape" class="btn btn-light" type="button">Cancelar</button>
+              <button id="salvar-peca" class="btn btn-primary" type="submit">Cadastrar peça</button>
+            </div>
+          </form>
         </div>
         <div class="row mb-3">
           <div class="col-md-6 col-lg-5">
@@ -130,6 +240,7 @@
                 <th scope="col">Custo</th>
                 <th scope="col">Estoque</th>
                 <th scope="col">Fornecedor</th>
+                <th scope="col" class="text-end">Ações</th>
               </tr>
             </thead>
             <tbody id="pecas-tbody"></tbody>
@@ -147,6 +258,7 @@
   </div>
 
   <script src="/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="/js/dashboard.js"></script>
   <script src="/js/pecas.js"></script>
 </body>
