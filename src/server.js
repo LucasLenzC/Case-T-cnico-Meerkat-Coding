@@ -1,5 +1,5 @@
 require('dotenv').config();
-
+const prisma = require('./config/prisma');
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
@@ -7,7 +7,6 @@ const path = require('path');
 const pecasRoutes = require('./routes/peca.routes');
 const vendasRoutes = require('./routes/vendas.routes');
 const dashboardRoutes = require('./routes/dashboard.routes');
-const pool = require('./config/database');
 
 const app = express();
 
@@ -24,11 +23,19 @@ app.get('/health', (req, res) => {
 
 app.get('/db-health', async (req, res) => {
   try {
-    const resultado = await pool.query('SELECT NOW() AS agora');
-    res.json({ status: 'ok', banco: resultado.rows[0] });
+    const [resultado] = await prisma.$queryRaw`SELECT NOW() AS agora`;
+
+    res.json({
+      status: 'ok',
+      banco: resultado
+    });
   } catch (erro) {
     console.error(erro);
-    res.status(500).json({ status: 'erro', mensagem: 'Não foi possível conectar ao banco' });
+
+    res.status(500).json({
+      status: 'erro',
+      mensagem: 'Não foi possível conectar ao banco'
+    });
   }
 });
 
