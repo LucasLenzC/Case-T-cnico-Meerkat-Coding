@@ -24,9 +24,47 @@ async function inserirPeca(peca) {
  
 
 
-async function listarPecas() {
+async function listarPecas({ texto, categoria, precoMin, precoMax, page, pageSize, sortBy, order }) {
+  const filtros = [];
 
-  return prisma.pecas.findMany({ orderBy: { id: 'asc' } });
+  if (texto) {
+    filtros.push({
+      OR: [
+        { sku: { contains: texto, mode: 'insensitive' } },
+        { nome_peca: { contains: texto, mode: 'insensitive' } }
+      ]
+    });
+  }
+  if (categoria) {
+    filtros.push({ categoria: { equals: categoria, mode: 'insensitive' } });
+  }
+  if (precoMin !== undefined || precoMax !== undefined) {
+    filtros.push({
+      custo_unitario: {
+        ...(precoMin !== undefined ? { gte: precoMin } : {}),
+        ...(precoMax !== undefined ? { lte: precoMax } : {})
+      }
+    });
+  }
+
+  const where = filtros.length ? { AND: filtros } : {};
+  const [data, total] = await Promise.all([
+    prisma.pecas.findMany({
+      where,
+      skip: (page - 1) * pageSize,
+      take: pageSize,
+      orderBy: { [sortBy]: order }
+    }),
+    prisma.pecas.count({ where })
+  ]);
+
+  return {
+    data,
+    page,
+    pageSize,
+    total,
+    totalPages: Math.ceil(total / pageSize)
+  };
 }
 async function buscarPecaPorId(id) {
   

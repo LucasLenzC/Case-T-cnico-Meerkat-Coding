@@ -1,9 +1,9 @@
 const pecasService = require('../services/pecas.service');
 
-async function listar(req, res ) {
+async function listar(req, res) {
   try {
-    const pecas = await pecasService.listar();
-    res.json(pecas);
+    const resultado = await pecasService.listar(req.query);
+    res.json(resultado);
   } catch (erro) {
     console.error('Erro ao listar peças:', erro.message);
     res.status(500).json({ mensagem: 'Não foi possível listar as peças' });

@@ -91,6 +91,34 @@
               <input type="search" id="pesquisa-pecas" class="form-control" placeholder="Nome ou SKU da peça">
             </div>
           </div>
+          <div class="col-md-3 col-lg-2">
+            <label for="filtro-categoria" class="form-label">Categoria</label>
+            <input type="text" id="filtro-categoria" class="form-control" placeholder="Ex.: Freios">
+          </div>
+          <div class="col-md-3 col-lg-2">
+            <label for="preco-min" class="form-label">Preço mínimo</label>
+            <input type="number" id="preco-min" class="form-control" min="0" step="0.01">
+          </div>
+          <div class="col-md-3 col-lg-2">
+            <label for="preco-max" class="form-label">Preço máximo</label>
+            <input type="number" id="preco-max" class="form-control" min="0" step="0.01">
+          </div>
+          <div class="col-md-3 col-lg-2">
+            <label for="ordenar-por" class="form-label">Ordenar por</label>
+            <select id="ordenar-por" class="form-select">
+              <option value="id">Cadastro</option>
+              <option value="nome_peca">Nome</option>
+              <option value="custo_unitario">Preço</option>
+              <option value="estoque_atual">Estoque</option>
+            </select>
+          </div>
+          <div class="col-md-3 col-lg-2">
+            <label for="ordem" class="form-label">Ordem</label>
+            <select id="ordem" class="form-select">
+              <option value="asc">Crescente</option>
+              <option value="desc">Decrescente</option>
+            </select>
+          </div>
         </div>
         <div class="table-responsive">
           <table class="table align-middle">
@@ -106,6 +134,13 @@
             </thead>
             <tbody id="pecas-tbody"></tbody>
           </table>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-3">
+          <small id="pecas-paginacao-info" class="text-secondary"></small>
+          <div class="btn-group" role="group" aria-label="Paginação das peças">
+            <button id="pagina-anterior" class="btn btn-outline-secondary" type="button">Anterior</button>
+            <button id="pagina-proxima" class="btn btn-outline-secondary" type="button">Próxima</button>
+          </div>
         </div>
       </section>
     </main>
