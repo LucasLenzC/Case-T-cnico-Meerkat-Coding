@@ -4,6 +4,12 @@ Este arquivo registra as escolhas que orientaram o desenvolvimento do AutoVisão
 A ideia foi manter a aplicação simples de entender, fácil de testar e próxima do
 fluxo de uma loja de autopeças.
 
+## Por que escolhi Node.js
+
+Escolhi Node.js porque já tenho experiência com essa stack. Isso facilitou o
+desenvolvimento e a configuração do deploy, pois pude trabalhar com ferramentas
+que já conheço.
+
 ## Como o código foi dividido
 
 Escolhi uma separação em camadas para que cada parte tenha uma responsabilidade
@@ -45,18 +51,11 @@ elétrica apareçam como categorias diferentes no dashboard.
 
 ## Regras usadas no dashboard
 
-O faturamento líquido considera somente vendas concluídas e segue esta fórmula:
-
-~~~text
-quantidade × preço unitário × (1 − desconto)
-~~~
-
-O valor 5 ou 5% representa um desconto de cinco por cento. A margem é o faturamento
-menos o custo atual cadastrado para a peça. Uma peça entra na lista de nunca vendida
-quando ainda tem estoque e não aparece em nenhuma venda concluída do histórico.
-
-Essas contas ficam no backend. O painel envia os filtros e exibe os valores que a
-API devolve, sem repetir as regras financeiras no JavaScript do navegador.
+O faturamento soma apenas vendas concluídas: `quantidade × preço unitário ×
+(1 − desconto)`. Descontos como `5` e `5%` valem 5%. A margem desconta o custo
+atual das peças vendidas. Uma peça é considerada nunca vendida quando tem estoque
+e nenhuma venda concluída no histórico. As contas ficam no backend; o painel
+apenas envia os filtros e mostra os resultados.
 
 ## API e painel
 
@@ -77,3 +76,9 @@ dos arquivos de peças e vendas juntos.
 Essas decisões mantêm o escopo do case controlado, mas deixam um caminho claro
 para evoluções futuras, como histórico de custos e testes de integração mais
 abrangentes.
+
+## Uso do ChatGPT e do Codex
+
+Usei o ChatGPT e o Codex em algumas etapas para tirar dúvidas, investigar erros
+e me ajudar a desenvolver partes do código e do painel. Também contei com esse
+apoio para organizar a documentação e configurar o deploy.
