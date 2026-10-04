@@ -166,7 +166,7 @@ async function carregarDashboard() {
     exibirIndicadores(resumo);
     exibirCategorias(resumo.categorias);
     exibirPecasNuncaVendidas(resumo.pecasNuncaVendidas);
-    exibirGraficoCategorias(resumo.resultadoPorCategoria || resumo.categorias || []);
+    exibirGraficoCategorias(resumo.categorias || []);
     exibirGraficoStatus(resumo.pedidosPorStatus || []);
     exibirGraficoVendasPorDia(resumo.vendasPorDia || []);
     $('status-api').textContent = 'Resumo atualizado';

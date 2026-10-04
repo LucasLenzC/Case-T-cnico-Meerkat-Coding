@@ -1,12 +1,10 @@
 const vendasRepository = require('../repositories/vendas.repository');
 
-async function listar(req, res) {
+async function listar(req, res, next) {
   try {
-    const vendas = await vendasRepository.listarVendas();
-    res.json(vendas);
+    res.json(await vendasRepository.listarVendas());
   } catch (erro) {
-    console.error('Erro ao listar vendas:', erro.message);
-    res.status(500).json({ mensagem: 'Não foi possível listar as vendas' });
+    next(erro);
   }
 }
 

@@ -1,69 +1,48 @@
 const pecasService = require('../services/pecas.service');
 
-async function listar(req, res) {
+async function listar(req, res, next) {
   try {
-    const resultado = await pecasService.listar(req.query);
-    res.json(resultado);
+    res.json(await pecasService.listar(req.query));
   } catch (erro) {
-    console.error('Erro ao listar peças:', erro.message);
-    res.status(500).json({ mensagem: 'Não foi possível listar as peças' });
+    next(erro);
   }
 }
 
-async function buscarPorId(req, res) {
-  const id = req.params.id;
+async function buscarPorId(req, res, next) {
   try {
-    const peca = await pecasService.buscarPorId(id);
-    if (peca) {
-      res.json(peca);
-    } else {
-      res.status(404).json({ mensagem: 'Peça não encontrada' });
-    }
+    const peca = await pecasService.buscarPorId(req.params.id);
+    if (!peca) return res.status(404).json({ mensagem: 'Peça não encontrada' });
+    return res.json(peca);
   } catch (erro) {
-    console.error('Erro ao buscar peça por ID:', erro.message);
-    res.status(500).json({ mensagem: 'Não foi possível buscar a peça' });
+    return next(erro);
   }
 }
-async function inserir(req, res) {
-  const peca = req.body;
-  try {
 
-    await pecasService.inserir(peca);
+async function inserir(req, res, next) {
+  try {
+    await pecasService.inserir(req.body);
     res.status(201).json({ mensagem: 'Peça inserida com sucesso' });
   } catch (erro) {
-  if (erro.message.includes('inválido') || erro.message.includes('obrigatório')) {
-    return res.status(400).json({ mensagem: erro.message });
+    next(erro);
   }
+}
 
-  if (erro.code === 'P2002') {
-    return res.status(409).json({ mensagem: 'SKU já cadastrado' });
+async function deletarPeca(req, res, next) {
+  try {
+    await pecasService.deletarPeca(req.params.id);
+    res.json({ mensagem: 'Peça deletada com sucesso' });
+  } catch (erro) {
+    next(erro);
   }
-
-  res.status(500).json({ mensagem: 'Erro interno' });
 }
-}
-async function deletarPeca(req, res) {
-    const id = req.params.id;
 
-    try {
-        await pecasService.deletarPeca(id);
-        res.status(200).json({ mensagem: 'Peça deletada com sucesso' });
-    } catch (erro) {
-        console.error('Erro ao deletar peça:', erro.message);
-        res.status(500).json({ mensagem: 'Não foi possível deletar a peça' });
-    }
+async function atualizarPeca(req, res, next) {
+  try {
+    await pecasService.atualizarPeca(req.params.id, req.body);
+    res.json({ mensagem: 'Peça atualizada com sucesso' });
+  } catch (erro) {
+    next(erro);
+  }
 }
-async function atualizarPeca(req, res) {
-    const id = req.params.id;
-    const pecaAtualizada = req.body;
-    try {
 
-
-        await pecasService.atualizarPeca(id, pecaAtualizada);
-        res.status(200).json({ mensagem: 'Peça atualizada com sucesso' });
-    } catch (erro) {
-        console.error('Erro ao atualizar peça:', erro.message);
-        res.status(500).json({ mensagem: 'Não foi possível atualizar a peça' });
-    }
-}
 module.exports = { listar, buscarPorId, inserir, deletarPeca, atualizarPeca };

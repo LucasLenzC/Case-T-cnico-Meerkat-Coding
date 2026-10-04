@@ -1,7 +1,15 @@
 const prisma = require('../config/prisma');
+const { notFound } = require('../utils/http-error');
 
 async function inserirPeca(peca) {
   return prisma.pecas.create({ data: peca });
+}
+async function importarPeca(peca) {
+  return prisma.pecas.upsert({
+    where: { sku: peca.sku },
+    update: peca,
+    create: peca
+  });
 }
 async function listarPecas({ texto, categoria, precoMin, precoMax, page, pageSize, sortBy, order }) {
   const filtros = [];
@@ -55,15 +63,23 @@ async function buscarPecaPorSku(sku) {
 async function deletarPeca(id) {
   const pecaExistente = await prisma.pecas.findUnique({ where: { id: Number(id) } });
   if (!pecaExistente) {
-    throw new Error('Peça não encontrada');
+    throw notFound('Peça não encontrada');
   }
   return prisma.pecas.delete({ where: { id: Number(id) } });
 }
 async function atualizarPeca(id, pecaAtualizada) {
   const pecaExistente = await prisma.pecas.findUnique({ where: { id: Number(id) } });
   if (!pecaExistente) {
-    throw new Error('Peça não encontrada');
+    throw notFound('Peça não encontrada');
   }
  return prisma.pecas.update({ where: { id: Number(id) }, data: pecaAtualizada });
 }
-module.exports = { inserirPeca, listarPecas, buscarPecaPorId, buscarPecaPorSku, deletarPeca, atualizarPeca };
+module.exports = {
+  inserirPeca,
+  importarPeca,
+  listarPecas,
+  buscarPecaPorId,
+  buscarPecaPorSku,
+  deletarPeca,
+  atualizarPeca
+};

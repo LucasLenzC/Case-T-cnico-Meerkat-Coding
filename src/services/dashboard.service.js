@@ -1,10 +1,12 @@
 const dashboardRepository = require('../repositories/dashboard.repository');
 const {
   dataIso,
+  normalizarData,
   normalizarCategoria,
   normalizarLoja,
   normalizarStatus
 } = require('../utils/normalizacao');
+const { badRequest } = require('../utils/http-error');
 
 function numero(valor) {
   const resultado = Number(valor ?? 0);
@@ -48,9 +50,21 @@ function lojaNormalizada(valor) {
 
 function normalizarFiltros(filtros = {}) {
   const categoriaInformada = String(filtros.categoria || '').trim();
+  const valorData = (valor, nome) => {
+    if (valor === undefined || valor === '') return '';
+    try {
+      return normalizarData(valor).toISOString().slice(0, 10);
+    } catch (erro) {
+      throw badRequest(`${nome} inválida`);
+    }
+  };
+  const inicio = valorData(filtros.dataInicial || filtros.inicio, 'Data inicial');
+  const fim = valorData(filtros.dataFinal || filtros.fim, 'Data final');
+  if (inicio && fim && inicio > fim) throw badRequest('Data inicial não pode ser posterior à data final');
+
   return {
-    inicio: dataIso(filtros.dataInicial || filtros.inicio),
-    fim: dataIso(filtros.dataFinal || filtros.fim),
+    inicio,
+    fim,
     loja: filtros.loja ? lojaNormalizada(filtros.loja) : '',
     categoria: categoriaInformada ? categoriaDaPeca({ categoria: categoriaInformada }) : ''
   };
@@ -153,12 +167,12 @@ function calcularResumo({ pecas, vendas }, filtros = {}) {
       });
     }
   }
-  const resultadoPorCategoria = [...categorias.values()].map(categoria => ({
+  const categoriasFormatadas = [...categorias.values()].map(categoria => ({
     categoria: categoria.categoria,
     faturamento: arredondar(categoria.faturamento),
     margem: arredondar(categoria.margem),
     unidades: arredondar(categoria.unidades)
-  }));
+  })).sort((a, b) => b.faturamento - a.faturamento);
 
   return {
     faturamento: arredondar(faturamento),
@@ -171,8 +185,7 @@ function calcularResumo({ pecas, vendas }, filtros = {}) {
     pedidosNaoConcluidos: pedidosNaoConcluidos.size,
     registrosProcessados: vendasFiltradas.length,
     unidades,
-    categorias: resultadoPorCategoria.sort((a, b) => b.faturamento - a.faturamento),
-    resultadoPorCategoria: resultadoPorCategoria.sort((a, b) => b.faturamento - a.faturamento),
+    categorias: categoriasFormatadas,
     pedidosPorStatus,
     vendasPorDia: vendasPorDiaSerie,
     pecasNuncaVendidas,

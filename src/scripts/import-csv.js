@@ -52,7 +52,7 @@ function exibirResumo(resumo, simular) {
 
 async function executarImportacao() {
   const prisma = require('../config/prisma');
-  const { inserirPeca } = require('../repositories/pecas.repository');
+  const { importarPeca } = require('../repositories/pecas.repository');
   const { inserirVenda } = require('../repositories/vendas.repository');
   const simular = process.argv.includes('--dry-run');
   const chaveVenda = registro => JSON.stringify([registro.id_venda, registro.sku]);
@@ -62,7 +62,7 @@ async function executarImportacao() {
     const pecas = await importarArquivo({
       arquivo: path.join(__dirname, '../../dados/pecas.csv'),
       normalizar: normalizaPeca,
-      salvar: inserirPeca,
+      salvar: importarPeca,
       existentes: pecasExistentes,
       chave: p => p.sku,
       simular

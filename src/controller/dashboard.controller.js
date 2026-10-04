@@ -1,13 +1,10 @@
 const dashboardService = require('../services/dashboard.service');
-async function resumo(req, res) {
 
-    try {
-        const resumo = await dashboardService.resumoDashboard(req.query);
-        res.json(resumo);
-    } catch (erro) {
-        console.error('Erro ao obter resumo do dashboard:', erro.message);
-        res.status(500).json({ mensagem: 'Não foi possível obter o resumo do dashboard' });
-    }
-
+async function resumo(req, res, next) {
+  try {
+    res.json(await dashboardService.resumoDashboard(req.query));
+  } catch (erro) {
+    next(erro);
+  }
 }
 module.exports = { resumo };
