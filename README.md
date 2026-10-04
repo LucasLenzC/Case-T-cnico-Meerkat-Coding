@@ -220,13 +220,4 @@ O fluxo principal do case está disponível. Como próximos passos, ainda é pos
 ampliar os testes de integração do CRUD e evoluir o painel conforme novas
 necessidades aparecerem.
 
-## Decisões principais
 
-- O Prisma é a única forma de acesso ao banco dentro da aplicação.
-- Controllers cuidam da entrada e da resposta HTTP; services concentram as regras;
-  repositories fazem as consultas e gravações.
-- A importação usa upsert, então pode ser repetida sem criar duplicatas.
-- Os dados são normalizados assim que entram no sistema. Dessa forma, o dashboard
-  recebe informações consistentes e não precisa corrigir o mesmo dado várias vezes.
-- As migrations em prisma/migrations registram, de forma versionada, como o banco
-  evoluiu.
