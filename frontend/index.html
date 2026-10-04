@@ -145,6 +145,27 @@
         </div>
       </section>
 
+      <section class="panel mt-3" id="importacao">
+        <div class="panel-heading">
+          <div>
+            <h2>Importar CSVs</h2>
+            <p class="text-secondary mb-0">Selecione os dois arquivos para atualizar peças e vendas.</p>
+          </div>
+          <button id="importar-csv" class="btn btn-primary" type="button">Importar arquivos</button>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="arquivo-pecas" class="form-label">pecas.csv</label>
+            <input id="arquivo-pecas" class="form-control" type="file" accept=".csv,text/csv">
+          </div>
+          <div class="col-md-6">
+            <label for="arquivo-vendas" class="form-label">vendas.csv</label>
+            <input id="arquivo-vendas" class="form-control" type="file" accept=".csv,text/csv">
+          </div>
+        </div>
+        <p id="resultado-importacao" class="small text-secondary mt-3 mb-0" role="status"></p>
+      </section>
+
       <!-- 3. Catálogo: lista recebida de GET /pecas. -->
       <section class="panel mt-3 mb-5" id="pecas">
         <div class="panel-heading">
@@ -261,5 +282,6 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="/js/dashboard.js"></script>
   <script src="/js/pecas.js"></script>
+  <script src="/js/importacao.js"></script>
 </body>
 </html>

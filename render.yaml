@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: autovisao
+    runtime: node
+    buildCommand: npm ci && npx prisma generate && npx prisma migrate deploy
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: NODE_ENV
+        value: production

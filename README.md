@@ -75,6 +75,44 @@ Pré-requisitos: Node.js, npm e PostgreSQL.
 
 Abra <http://localhost:3000>. O `.env` não deve ser versionado.
 
+## Deploy com Supabase e Render
+
+O Supabase fornece o PostgreSQL; o Render executa o Express e serve o painel.
+O arquivo `render.yaml` já define a instalação, a migration, o comando de início
+e o health check.
+
+1. Crie um projeto no Supabase e abra **Connect**. Para este servidor Express,
+   use a conexão **Session pooler**. Copie a URL gerada pelo Supabase e substitua
+   a senha. Não digite o host manualmente; copie o valor exibido no painel.
+2. Envie o commit para um repositório público no GitHub.
+3. No Render, escolha **New > Web Service**, conecte o repositório e selecione a
+   branch `main`. Se o Render pedir os comandos manualmente, use:
+
+   ```text
+   Build Command: npm ci && npx prisma generate && npx prisma migrate deploy
+   Start Command: npm start
+   Health Check Path: /health
+   ```
+
+4. Cadastre no Render as variáveis:
+
+   ```text
+   DATABASE_URL=<URL do Session pooler do Supabase>
+   NODE_ENV=production
+   ```
+
+5. Aguarde o deploy e teste `https://SEU-ENDERECO.onrender.com/health`.
+   Depois teste `/db-health`, `/pecas` e `/dashboard/resumo`.
+
+6. Para carregar os CSVs no banco remoto, use o painel publicado ou execute a
+   importação local com a `DATABASE_URL` do Supabase. Nunca coloque essa URL no
+   frontend, no Git ou em uma mensagem pública.
+
+O Supabase oferece conexão direta, Session pooler e Transaction pooler. O projeto
+é um servidor Express persistente, por isso a Session pooler é a escolha mais
+simples. A Transaction pooler é voltada principalmente a funções serverless e
+exige configuração adicional do Prisma.
+
 ## Funcionalidades
 
 - Dashboard com faturamento líquido, custo, margem, pedidos, unidades e capital parado.
@@ -84,6 +122,7 @@ Abra <http://localhost:3000>. O `.env` não deve ser versionado.
 - Busca combinada por texto, categoria e faixa de custo.
 - Paginação e ordenação da lista de peças.
 - Importação idempotente dos CSVs, com validação e relatório de rejeições.
+- Upload de `pecas.csv` e `vendas.csv` pelo painel.
 
 ## Rotas principais
 
@@ -98,6 +137,7 @@ Abra <http://localhost:3000>. O `.env` não deve ser versionado.
 | DELETE | `/pecas/:id` | Exclui uma peça |
 | GET | `/vendas` | Lista vendas importadas |
 | GET | `/dashboard/resumo` | Retorna indicadores e dados dos gráficos |
+| POST | `/importacao/csv` | Importa os dois CSVs enviados pelo painel |
 
 Exemplo de busca combinada:
 
@@ -136,6 +176,11 @@ vendas, e cada venda usa a chave composta `id_venda + sku` para evitar duplicida
 Use `--dry-run` para validar os arquivos sem gravar. A execução gera um relatório
 JSON em `relatorios/`; essa pasta é ignorada pelo Git.
 
+Pelo painel, selecione `pecas.csv` e `vendas.csv` na seção **Importar CSVs**.
+O navegador envia o conteúdo para `POST /importacao/csv`, que usa a mesma
+normalização e as mesmas regras do comando do terminal. Cada arquivo pode ter até
+5 MB.
+
 ## Organização
 
 ```text
@@ -164,7 +209,7 @@ npm run prisma:status
 ```
 
 O fluxo principal do case está implementado. Melhorias posteriores podem incluir
-upload de CSV pelo painel, testes de integração do CRUD e publicação online.
+testes de integração do CRUD e publicação online.
 
 ## Decisões de implementação
 

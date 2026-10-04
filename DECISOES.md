@@ -55,14 +55,14 @@ valores recebidos da API.
 A API oferece o CRUD de peças, busca combinada, paginação e ordenação. O dashboard
 aceita período, loja e categoria como filtros. O frontend usa Bootstrap para a
 estrutura visual e Chart.js para os gráficos, mantendo JavaScript simples e sem
-repetir as regras financeiras.
+repetir as regras financeiras. O upload envia os dois CSVs para uma rota própria,
+mas reutiliza o mesmo service da importação pelo terminal.
 
 ## Limitações assumidas
 
 O custo usado na margem é o custo atual cadastrado da peça. O projeto ainda não
-mantém histórico de custo por venda. O upload de CSV pelo painel também não faz
-parte do fluxo principal: a importação é executada pelo comando do terminal,
-conforme o requisito do case.
+mantém histórico de custo por venda. O upload limita cada arquivo a 5 MB e exige
+que peças e vendas sejam enviados juntos.
 
 Essas escolhas mantêm o escopo pequeno e deixam as regras principais fáceis de
 testar e revisar.
