@@ -124,6 +124,7 @@ adicional do Prisma.
 - Dashboard com faturamento líquido, custo, margem, pedidos, unidades e capital parado.
 - Filtros do dashboard por período, loja e categoria.
 - Gráficos por categoria, status e dia.
+- Rankings de lojas, clientes e fornecedores no painel.
 - Cadastro, edição e exclusão de peças.
 - Busca combinada por texto, categoria e faixa de custo.
 - Paginação e ordenação da lista de peças.
@@ -163,6 +164,9 @@ estoque_atual. O fornecedor é opcional. Se o SKU já existir, a API responde co
 - Pedidos concluídos: quantidade de id_venda distintos.
 - Peças nunca vendidas: estoque maior que zero e nenhum registro de venda concluída.
 - O desconto 5 ou 5% representa 5%.
+
+O ranking de fornecedores usa o valor das peças em estoque, porque os arquivos de
+entrada não possuem histórico de compras.
 
 O frontend envia os filtros, formata os valores e mostra o que recebe. Os cálculos
 ficam em src/services/dashboard.service.js, para que a mesma regra seja usada

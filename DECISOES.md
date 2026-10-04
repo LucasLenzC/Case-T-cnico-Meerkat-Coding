@@ -65,13 +65,18 @@ paginação e ordenação. O dashboard pode ser filtrado por período, loja e ca
 No frontend, usei Bootstrap para organizar a página e Chart.js para os gráficos.
 O código do painel continua em JavaScript simples, suficiente para consumir as
 rotas sem criar uma camada adicional desnecessária. O upload recebe os dois CSVs e
-reutiliza o mesmo service da importação pelo terminal.
+reutiliza o mesmo service da importação pelo terminal. O dashboard também mostra
+as lojas com maior faturamento, os clientes com mais unidades compradas e os
+fornecedores mais presentes no estoque, pois achei que seriam informações interessantes para o 
+vendedor.
 
 ## Limitações que assumi
 
 A margem usa o custo atual da peça. O sistema ainda não guarda o histórico do
-custo no momento de cada venda. O upload limita cada arquivo a 5 MB e exige o envio
-dos arquivos de peças e vendas juntos.
+custo no momento de cada venda. Como os CSVs não possuem uma tabela de compras,
+o ranking de fornecedores usa o valor atual das peças em estoque como referência.
+O upload limita cada arquivo a 5 MB e exige o envio dos arquivos de peças e vendas
+juntos.
 
 Essas decisões mantêm o escopo do case controlado, mas deixam um caminho claro
 para evoluções futuras, como histórico de custos e testes de integração mais

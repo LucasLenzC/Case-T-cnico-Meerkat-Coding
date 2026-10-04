@@ -132,6 +132,52 @@ function calcularResumo({ pecas, vendas }, filtros = {}) {
       .filter(id => !pedidosConcluidos.has(id))
   );
 
+  const lojasMaisVendas = new Map();
+  const clientesQueMaisCompram = new Map();
+  for (const venda of vendasConcluidas) {
+    const peca = pecasPorSku.get(String(venda.sku).trim());
+    const quantidade = numero(venda.quantidade);
+    const receita = quantidade * numero(venda.preco_unitario) * (1 - descontoDecimal(venda.desconto));
+    const idPedido = venda.id_venda || venda.id;
+    const loja = lojaNormalizada(venda.loja);
+    const cliente = String(venda.cliente || 'Cliente não informado').trim();
+    const resumoLoja = lojasMaisVendas.get(loja) || { loja, faturamento: 0, unidades: 0, pedidos: new Set() };
+    resumoLoja.faturamento += receita;
+    resumoLoja.unidades += quantidade;
+    resumoLoja.pedidos.add(idPedido);
+    lojasMaisVendas.set(loja, resumoLoja);
+    const resumoCliente = clientesQueMaisCompram.get(cliente) || { cliente, faturamento: 0, unidades: 0, pedidos: new Set() };
+    resumoCliente.faturamento += receita;
+    resumoCliente.unidades += quantidade;
+    resumoCliente.pedidos.add(idPedido);
+    clientesQueMaisCompram.set(cliente, resumoCliente);
+  }
+
+  const fornecedoresMaisPresentes = new Map();
+  for (const peca of pecas) {
+    if (filtros.categoria && categoriaDaPeca(peca) !== filtros.categoria) continue;
+    const fornecedor = String(peca.fornecedor || 'Fornecedor não informado').trim();
+    const resumoFornecedor = fornecedoresMaisPresentes.get(fornecedor) || {
+      fornecedor,
+      pecas: 0,
+      estoque: 0,
+      capitalEmEstoque: 0
+    };
+    const estoque = numero(peca.estoque_atual);
+    resumoFornecedor.pecas += 1;
+    resumoFornecedor.estoque += estoque;
+    resumoFornecedor.capitalEmEstoque += estoque * numero(peca.custo_unitario);
+    fornecedoresMaisPresentes.set(fornecedor, resumoFornecedor);
+  }
+
+  const formatarRanking = (mapa, criterio) => [...mapa.values()]
+    .map(item => ({
+      ...item,
+      pedidos: item.pedidos ? item.pedidos.size : undefined
+    }))
+    .sort(criterio)
+    .slice(0, 5);
+
   const vendasPorDia = new Map();
   for (const venda of vendasConcluidas) {
     const data = dataIso(venda.data_venda) || 'Sem data';
@@ -187,6 +233,18 @@ function calcularResumo({ pecas, vendas }, filtros = {}) {
     unidades,
     categorias: categoriasFormatadas,
     pedidosPorStatus,
+    lojasMaisVendas: formatarRanking(
+      lojasMaisVendas,
+      (a, b) => b.faturamento - a.faturamento
+    ),
+    clientesQueMaisCompram: formatarRanking(
+      clientesQueMaisCompram,
+      (a, b) => b.unidades - a.unidades || b.faturamento - a.faturamento
+    ),
+    fornecedoresMaisPresentes: [...fornecedoresMaisPresentes.values()]
+      .map(item => ({ ...item, capitalEmEstoque: arredondar(item.capitalEmEstoque) }))
+      .sort((a, b) => b.capitalEmEstoque - a.capitalEmEstoque)
+      .slice(0, 5),
     vendasPorDia: vendasPorDiaSerie,
     pecasNuncaVendidas,
     itens: vendasConcluidas.length,

@@ -158,6 +158,24 @@ function exibirPecasNuncaVendidas(pecas) {
     : '<p>Nenhuma peça com estoque e sem venda.</p>';
 }
 
+function exibirRankings(resumo) {
+  $('lojas-tbody').innerHTML = (resumo.lojasMaisVendas || []).length
+    ? resumo.lojasMaisVendas.map(item => `
+        <tr><td>${esc(item.loja)}</td><td>${number(item.pedidos)}</td><td>${money(item.faturamento)}</td></tr>
+      `).join('')
+    : '<tr><td colspan="3">Nenhuma venda concluída.</td></tr>';
+  $('clientes-tbody').innerHTML = (resumo.clientesQueMaisCompram || []).length
+    ? resumo.clientesQueMaisCompram.map(item => `
+        <tr><td>${esc(item.cliente)}</td><td>${number(item.unidades)}</td><td>${money(item.faturamento)}</td></tr>
+      `).join('')
+    : '<tr><td colspan="3">Nenhum cliente encontrado.</td></tr>';
+  $('fornecedores-tbody').innerHTML = (resumo.fornecedoresMaisPresentes || []).length
+    ? resumo.fornecedoresMaisPresentes.map(item => `
+        <tr><td>${esc(item.fornecedor)}</td><td>${number(item.pecas)}</td><td>${money(item.capitalEmEstoque)}</td></tr>
+      `).join('')
+    : '<tr><td colspan="3">Nenhum fornecedor encontrado.</td></tr>';
+}
+
 async function carregarDashboard() {
   $('status-api').textContent = 'Carregando resumo…';
   try {
@@ -166,6 +184,7 @@ async function carregarDashboard() {
     exibirIndicadores(resumo);
     exibirCategorias(resumo.categorias);
     exibirPecasNuncaVendidas(resumo.pecasNuncaVendidas);
+    exibirRankings(resumo);
     exibirGraficoCategorias(resumo.categorias || []);
     exibirGraficoStatus(resumo.pedidosPorStatus || []);
     exibirGraficoVendasPorDia(resumo.vendasPorDia || []);

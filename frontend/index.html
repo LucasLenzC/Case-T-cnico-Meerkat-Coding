@@ -145,6 +145,49 @@
         </div>
       </section>
 
+      <section class="row g-3 mt-1" id="rankings-dashboard">
+        <div class="col-xl-4">
+          <div class="panel h-100">
+            <div class="panel-heading">
+              <div>
+                <h2>Lojas que mais vendem</h2>
+                <p class="text-secondary mb-0">Vendas concluídas por faturamento.</p>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-sm"><thead><tr><th>Loja</th><th>Pedidos</th><th>Faturamento</th></tr></thead><tbody id="lojas-tbody"></tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="panel h-100">
+            <div class="panel-heading">
+              <div>
+                <h2>Clientes que mais compram</h2>
+                <p class="text-secondary mb-0">Ordenados por unidades compradas.</p>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-sm"><thead><tr><th>Cliente</th><th>Unidades</th><th>Faturamento</th></tr></thead><tbody id="clientes-tbody"></tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="panel h-100">
+            <div class="panel-heading">
+              <div>
+                <h2>Fornecedores</h2>
+                <p class="text-secondary mb-0">Maior valor de peças em estoque.</p>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-sm"><thead><tr><th>Fornecedor</th><th>Peças</th><th>Valor em estoque</th></tr></thead><tbody id="fornecedores-tbody"></tbody></table>
+            </div>
+            <small class="text-secondary">O CSV não possui histórico de compras; este ranking usa o estoque atual.</small>
+          </div>
+        </div>
+      </section>
+
       <section class="panel mt-3" id="importacao">
         <div class="panel-heading">
           <div>
