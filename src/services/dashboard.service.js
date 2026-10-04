@@ -199,8 +199,9 @@ function calcularResumo({ pecas, vendas }, filtros = {}) {
 }
 
 async function resumoDashboard(filtros) {
+  const filtrosNormalizados = normalizarFiltros(filtros);
   const dados = await dashboardRepository.buscarDadosDashboard();
-  return calcularResumo(dados, normalizarFiltros(filtros));
+  return calcularResumo(dados, filtrosNormalizados);
 }
 
 module.exports = { resumoDashboard, calcularResumo };
